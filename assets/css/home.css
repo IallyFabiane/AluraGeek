@@ -1,0 +1,75 @@
+:root {
+    --darkblue:#2A7AE4;
+    --mediumblue: #5595E9;
+    --softblue: #D4E4FA;
+    --offwhite: #E5E5E5;
+    --softgray: #F5F5F5;
+    --mediumgray: #A2A2A2;
+    --darkgray: #464646;
+    --white:#FFF;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    width: 360px;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+    margin: 0;
+    gap: 30px;
+    width: 360px;
+    height: 72px;
+    background-color: var(--white);
+}
+
+.menu__logo {
+    width: 100px;
+    height: 28px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu__button {
+    box-sizing: border-box;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid var(--darkblue);
+    color: var(--darkblue);
+    background-color: var(--white);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.menu__search-icon {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 611px;
+    width: 768px;
+    height: 72px;
+}
+    
+}
