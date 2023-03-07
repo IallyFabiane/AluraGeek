@@ -149,6 +149,12 @@ body {
     border: none;
 }
 
+.promocional__button:hover {
+    background-color: var(--white);
+    color: var(--mediumblue);
+    border: 1px solid var(--mediumblue);
+}
+
 @media (min-width: 768px) and (max-width: 993px) {
 
 html, body {
@@ -159,7 +165,6 @@ body {
     min-width: 768px;
     max-width: 993px;
 }
-
 
 .menu {
     display: flex;
@@ -298,7 +303,7 @@ header {
 }
 
 .menu__search-input {
-    width: 159px;
+    width: 209px;
     height: 16px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -321,6 +326,39 @@ header {
     width: 182px;
     height: 51px;
     margin-left: 20%;
+}
+
+.promocional {
+    padding: 32px;
+    gap: 16px;
+    min-width: 1440px;
+    height: 352px;
+}
+
+.promocional__texto {
+    width: 1136px;
+    height: 170px;
+}
+
+.promocional__h1 {
+    width: 751px;
+    height: 61px;
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.promocional__h3 {
+    width: 751px;
+    height: 26px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.promocional__button {
+    padding: 16px;
+    gap: 20px;
+    width: 130px;
+    height: 51px;
 }
 
 }
