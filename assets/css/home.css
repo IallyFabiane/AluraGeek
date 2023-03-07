@@ -14,7 +14,8 @@ html, body {
 }
 
 body {
-    width: 360px;
+    min-width: 360px;
+    max-width: 410px;
 }
 
 .menu {
@@ -46,7 +47,7 @@ body {
     box-sizing: border-box;
     padding: 12px 16px;
     gap: 10px;
-    width: 100px;
+    width: 119px;
     height: 40px;
     border: 1px solid var(--darkblue);
     color: var(--darkblue);
@@ -91,7 +92,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 16px;
-    width: 360px;
+    min-width: 360px;
+    max-width: 410px;
     height: 192px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url('../img/banner-home.png');
     background-size: cover;
@@ -154,8 +156,10 @@ html, body {
 }
 
 body {
-    width: 768px;
+    min-width: 768px;
+    max-width: 993px;
 }
+
 
 .menu {
     display: flex;
@@ -163,7 +167,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 16px 0px;
-    margin: 0;
+    margin: 0 auto;
     gap: 20px;
     width: 768px;
     height: 72px;
@@ -212,6 +216,41 @@ body {
 .menu__search-icon {
     order: 1;
 }
+
+.promocional {
+    min-width: 768px;
+    max-width: 993px;
+    padding: 32px;
+    gap: 16px;
+    height: 352px;
+}
+
+.promocional__texto {
+    gap: 16px;
+    width: 704px;
+    height: 159px;
+}
+
+.promocional__h1 {
+    width: 704px;
+    height: 61px;
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.promocional__h3 { 
+    width: 704px;
+    height: 26px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.promocional__button {
+    padding: 12px 16px;
+    gap: 10px;
+    width: 119px;
+    height: 40px;
+}
   
 }
 
@@ -221,7 +260,7 @@ html, body {
     overflow-x: visible;
 }
 
-body {
+header {
     width: 1440px;
 }
 
