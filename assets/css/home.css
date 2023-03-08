@@ -319,6 +319,19 @@ body {
     width: 119px;
     height: 40px;
 }
+
+.footer { 
+    min-width: 768px;
+    max-width: 993px;
+    height: 102px;
+}
+
+.footer__p {
+    width: 234px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 19px;
+}
   
 }
 
@@ -423,6 +436,16 @@ header {
     gap: 20px;
     width: 130px;
     height: 51px;
+}
+
+.footer {
+    min-width: 1440px;
+    height: 102px;
+}
+
+.footer__p {
+    width: 234px;
+   height: 38px;
 }
 
 }
