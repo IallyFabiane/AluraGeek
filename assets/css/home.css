@@ -69,12 +69,16 @@ body {
     width: 119px;
     height: 40px;
     border: 1px solid var(--darkblue);
-    color: var(--darkblue);
     background-color: var(--white);
     flex: none;
     order: 1;
     flex-grow: 0;
     transition: all 200ms ease-in-out;
+}
+
+.menu__button > a {
+    color: var(--darkblue);
+    text-decoration: none;
 }
 
 .menu__button:hover {
@@ -444,7 +448,7 @@ header {
 }
 
 .footer__p {
-    width: 234px;
+   width: 234px;
    height: 38px;
 }
 
