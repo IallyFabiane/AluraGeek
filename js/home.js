@@ -54,3 +54,4 @@ searchIcon.addEventListener('click', () => {
     mostraBarraDePesquisa();
 });
 
+

@@ -208,6 +208,11 @@ body {
     height: 174px;
 }
 
+.produtos__img--desktop,
+.produtos__descricao--desktop {
+    display: none;
+}
+
 .produtos__descricao {
     display: flex;
     flex-direction: column;
@@ -487,6 +492,11 @@ body {
     place-content: center;
 }
 
+.produtos__img--desktop,
+.produtos__descricao--desktop {
+    display: none;
+}
+
 .produtos__titulo {
     font-size: 22px;
     line-height: 26px;
@@ -638,6 +648,127 @@ header {
     gap: 20px;
     width: 130px;
     height: 51px;
+}
+
+#produtos__star-wars {
+    min-width: 1440px;
+}
+
+.produtos__img--desktop {
+    display: block;
+}
+
+.produtos__descricao--desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.produtos__star-wars {
+    display: grid;
+    grid-template-areas: 
+    "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
+    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormstroper produtos__baby-yoda produtos__lord-sith"
+    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+    ;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 100px 230px 120px;
+    padding: 16px 10px;
+    padding: 0px;
+    gap: 16px;
+    margin: 0 auto;
+    width: 1136px;
+    height: 400px;
+    place-items: center;
+}
+
+.produtos__titulo {
+    grid-area: produtos__titulo;
+    width: 148px;
+    height: 38px;
+    font-size: 32px;
+    line-height: 38px;
+    justify-self: left;
+    align-self: end;
+    margin-left: 10px;
+}
+
+.produtos__p-container {
+    grid-area: produtos__p-container;
+    padding: 0px;
+    gap: 8px;
+    width: 98px;
+    height: 24px;
+    margin-left: 500px;
+    justify-self: right;
+    align-self: end;
+}
+
+.produtos__p {
+    width: 66px;
+    height: 19px;
+}
+
+.produtos__img,
+.produtos__img--desktop {
+    width: 176px;
+   height: 174px;
+}
+
+.produtos__descricao,
+.produtos__descricao--desktop {
+    padding: 0px;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+}
+
+.produtos__caneca {
+    grid-area: produtos__caneca;
+}
+
+.produtos__darth-vader {
+    grid-area: produtos__darth-vader;
+}
+
+.produtos__yoda {
+    grid-area: produtos__yoda;
+}
+
+.produtos__stormstroper {
+    grid-area: produtos__stormstroper;
+}
+
+.produtos__baby-yoda {
+    grid-area: produtos__baby-yoda;
+}
+
+.produtos__lord-sith {
+    grid-area: produtos__lord-sith;
+}
+
+.produtos__descricao1 {
+    grid-area: produtos__descricao1;
+}
+
+.produtos__descricao2 {
+    grid-area: produtos__descricao2;
+}
+
+.produtos__descricao3 {
+    grid-area: produtos__descricao3;
+}
+
+.produtos__descricao4 {
+    grid-area: produtos__descricao4;
+}
+
+.produtos__descricao5 {
+    grid-area: produtos__descricao5;
+}
+
+.produtos__descricao6 {
+    grid-area: produtos__descricao6;
 }
 
 .footer {
