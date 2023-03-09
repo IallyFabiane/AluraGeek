@@ -989,6 +989,76 @@ header {
     grid-area: produtos__descricao6;
 }
 
+#produtos__diversos {
+    min-width: 1440px;
+}
+
+.produtos__diversos {
+    display: grid;
+    grid-template-areas: 
+    "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
+    "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio produtos__oculos produtos__pikachu"
+    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+    ;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 150px 230px 120px;
+    padding: 32px 10px;
+    padding: 0px;
+    gap: 16px;
+    margin: 0 auto;
+    width: 1136px;
+    height: 450px;
+    place-items: center;
+}
+
+.produtos__atari {
+    grid-area: produtos__atari;
+}
+
+.produtos__snes {
+    grid-area: produtos__snes;
+}
+
+.produtos__sonic {
+    grid-area: produtos__sonic;
+}
+
+.produtos__radio-relogio {
+    grid-area: produtos__radio-relogio;
+}
+
+.produtos__oculos {
+    grid-area: produtos__oculos;
+}
+
+.produtos__pikachu {
+    grid-area: produtos__pikachu;
+}
+
+.produtos__descricao1 {
+    grid-area: produtos__descricao1;
+}
+
+.produtos__descricao2 {
+    grid-area: produtos__descricao2;
+}
+
+.produtos__descricao3 {
+    grid-area: produtos__descricao3;
+}
+
+.produtos__descricao4 {
+    grid-area: produtos__descricao4;
+}
+
+.produtos__descricao5 {
+    grid-area: produtos__descricao5;
+}
+
+.produtos__descricao6 {
+    grid-area: produtos__descricao6;
+}
+
 .footer {
     min-width: 1440px;
     height: 102px;
