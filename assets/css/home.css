@@ -672,13 +672,13 @@ header {
     "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
     ;
     grid-template-columns: repeat(6, 200px);
-    grid-template-rows: 100px 230px 120px;
-    padding: 16px 10px;
+    grid-template-rows: 150px 230px 120px;
+    padding: 32px 10px;
     padding: 0px;
     gap: 16px;
     margin: 0 auto;
     width: 1136px;
-    height: 400px;
+    height: 450px;
     place-items: center;
 }
 
