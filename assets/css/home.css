@@ -586,7 +586,7 @@ body {
     "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormstroper"
     "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
     ;
-    grid-template-columns: repeat(4, 170px);
+    grid-template-columns: repeat(4, 160px);
     grid-template-rows: 40px 180px 86px;
     padding: 16px 10px;
     margin: 0 auto;
@@ -627,7 +627,7 @@ body {
 }
 
 .produtos__img {
-    width: 160px;
+    width: 150px;
     height: 174px;
 }
 
@@ -647,7 +647,27 @@ body {
     "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch"
     "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
     ;
-    grid-template-columns: repeat(4, 170px);
+    grid-template-columns: repeat(4, 160px);
+    grid-template-rows: 40px 180px 86px;
+    padding: 16px 10px;
+    margin: 0 auto;
+    padding: 10px;
+    column-gap: 0;
+    row-gap: 10px;
+    min-width: 768px;
+    max-width: 993px;
+    height: 358px;
+    place-content: center;
+}
+
+.produtos__diversos {
+    display: grid;
+    grid-template-areas: 
+    "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
+    "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio"
+    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
+    ;
+    grid-template-columns: repeat(4, 160px);
     grid-template-rows: 40px 180px 86px;
     padding: 16px 10px;
     margin: 0 auto;
