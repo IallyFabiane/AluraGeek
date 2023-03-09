@@ -772,7 +772,7 @@ header {
 .produtos__p-container {
     grid-area: produtos__p-container;
     padding: 0px;
-    gap: 8px;
+    gap: 0;
     width: 98px;
     height: 24px;
     margin-left: 500px;
@@ -821,6 +821,76 @@ header {
 
 .produtos__lord-sith {
     grid-area: produtos__lord-sith;
+}
+
+.produtos__descricao1 {
+    grid-area: produtos__descricao1;
+}
+
+.produtos__descricao2 {
+    grid-area: produtos__descricao2;
+}
+
+.produtos__descricao3 {
+    grid-area: produtos__descricao3;
+}
+
+.produtos__descricao4 {
+    grid-area: produtos__descricao4;
+}
+
+.produtos__descricao5 {
+    grid-area: produtos__descricao5;
+}
+
+.produtos__descricao6 {
+    grid-area: produtos__descricao6;
+}
+
+#produtos__consoles {
+    min-width: 1440px;
+}
+
+.produtos__consoles {
+    display: grid;
+    grid-template-areas: 
+    "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
+    "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch produtos__xbox-x produtos__game-boy"
+    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+    ;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 150px 230px 120px;
+    padding: 32px 10px;
+    padding: 0px;
+    gap: 16px;
+    margin: 0 auto;
+    width: 1136px;
+    height: 450px;
+    place-items: center;
+}
+
+.produtos__joystick {
+    grid-area: produtos__joystick;
+}
+
+.produtos__playstation {
+    grid-area: produtos__playstation;
+}
+
+.produtos__nintendo {
+    grid-area: produtos__nintendo;
+}
+
+.produtos__nintendo-switch {
+    grid-area: produtos__nintendo-switch;
+}
+
+.produtos__xbox-x {
+    grid-area: produtos__xbox-x;
+}
+
+.produtos__game-boy {
+    grid-area: produtos__game-boy;
 }
 
 .produtos__descricao1 {
