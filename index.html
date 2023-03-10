@@ -160,6 +160,46 @@
                 <p class="produtos__descricao-p"><a href="produto.html" target="_self" rel="next">Ver produto</a></p>
              </article>
         </section>
+        <section class="contato__container">
+           <article class="contato">
+                <div class="suporte">
+                    <img class="suporte__logo" src="assets/img/logo.png" alt="logotipo">
+                    <ul class="suporte__lista">
+                        <li class="suporte__item">Quem somos nós</li>
+                        <li class="suporte__item">Política de Privacidade</li>
+                        <li class="suporte__item">Programa fidelidade</li>
+                        <li class="suporte__item">Nossas lojas</li>
+                        <li class="suporte__item">Quero ser franqueado</li>
+                        <li class="suporte__item">Anuncie aqui</li>
+                    </ul>
+                </div>
+                <form class="contato__form">
+                    <fieldset>
+                        <legend class="contato__form-titulo">Fale conosco</legend>
+                    </fieldset>
+                    <fieldset class="contato__fields">
+                        <div class="contato__input__container">
+                            <div class="contato__elementos">
+                                <div class="contato__textos">
+                                    <label for="name" class="contato__label">Nome</label>
+                                    <input required name="name" class="contato__input" id="campo1" type="text" placeholder="Seu nome" value=""></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__nome" style="color: red; font-weight: bold;"></div>
+                        <div class="contato__input__container contato__input__container--textarea">
+                            <div class="contato__elementos--textarea">
+                                <textarea required name="message" class="contato__input--textarea" id="campo2" placeholder="Escreva sua mensagem" rows="5" cols="30" wrap="hard"></textarea>
+                            </div>
+                        </div>
+                        <div class="container__mensagem" style="color: red; font-weight: bold;"></div>
+                    </fieldset>
+                    <button class="contato__button" type="submit">
+                        Enviar Mensagem 
+                    </button>
+                </form>
+           </article>
+        </section>
         <footer class="footer">
             <p class="footer__p">Desenvolvido por <a class="footer__link" href="https://www.linkedin.com/in/ially-fabiane-a15877223/" target="_blank" rel="external"><span>Ially Fabiane</span></a> 2023</p>
         </footer>
