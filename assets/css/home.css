@@ -69,10 +69,10 @@ body {
     height: 40px;
     border: 1px solid var(--darkblue);
     background-color: var(--white);
+    color: var(--darkblue);
     flex: none;
     order: 1;
     flex-grow: 0;
-    transition: all 200ms ease-in-out;
 }
 
 .menu__button > a {
@@ -81,9 +81,7 @@ body {
 }
 
 .menu__button:hover {
-    border: 1px solid var(--darkblue);
-    color: var(--white);
-    background-color: var(--darkblue);  
+    background-color: var(--blue);  
 }
 
 .menu__search {
@@ -462,8 +460,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    gap: 16px;
+    padding-top: 10px;
+    gap: 8px;
     width: 328px;
     height: 260px;
 }
@@ -613,7 +611,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 6px;
+    width: 328px;
+    height: 82px;
   }
 
   .contato__button {
@@ -1376,6 +1375,118 @@ header {
 
 .produtos__descricao6 {
     grid-area: produtos__descricao6;
+}
+
+.contato__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    min-width: 1500px;
+    height: 470px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    margin: 0 auto;
+    gap: 10px;
+    width: 1200px;
+    height: 368px;
+}
+
+.suporte {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
+    width: 600px;
+    height: 240px;
+}
+
+.suporte__logo {
+    width: 176px;
+    height: 50px;
+}
+
+.suporte__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 176px;
+    height: 234px;
+}
+
+.suporte__item {
+    width: 176px;
+    height: 19px;
+    text-align: left;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 560px;
+    height: 240px;
+}
+
+.contato__form-titulo {
+    width: 560px;
+    height: 19px;
+}
+
+.contato__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 560px;
+    height: 250px;
+}
+
+.contato__input__container,
+.contato__input__container--textarea {
+    width: 560px;
+}
+
+.contato__input {
+    width: 536px;
+}
+
+.contato__input--textarea {
+    width: 560px;
+    height: 78px;
+}
+
+.contato__input:focus,
+.contato__input--textarea:focus {
+    width: 556px;
+}
+
+.contato__elementos {
+    width: 560px;
+    height: 56px;
+}
+
+.contato__textos {
+    width: 536px;
+    height: 40px;
+}
+
+.contato__elementos--textarea {
+    width: 555px;
+    height: 82px;
+    padding: 0;
 }
 
 .footer {
