@@ -1016,6 +1016,7 @@ body {
 
 html, body {
     overflow-x: visible;
+    min-width: 993px;
 }
 
 header {
@@ -1085,13 +1086,20 @@ header {
 .promocional {
     padding: 32px;
     gap: 32px;
-    min-width: 1440px;
+    min-width: 1600px;
     height: 352px;
 }
 
 .promocional__texto {
     width: 1136px;
     height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    margin: 0 auto;
 }
 
 .promocional__h1 {
@@ -1116,7 +1124,7 @@ header {
 }
 
 #produtos__star-wars {
-    min-width: 1440px;
+    min-width: 1600px;
 }
 
 .produtos__img--desktop {
@@ -1237,7 +1245,7 @@ header {
 }
 
 #produtos__consoles {
-    min-width: 1440px;
+    min-width: 1600px;
 }
 
 .produtos__consoles {
@@ -1307,7 +1315,7 @@ header {
 }
 
 #produtos__diversos {
-    min-width: 1440px;
+    min-width: 1600px;
 }
 
 .produtos__diversos {
@@ -1381,7 +1389,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    min-width: 1500px;
+    min-width: 1600px;
     height: 470px;
 }
 
@@ -1489,7 +1497,7 @@ header {
 }
 
 .footer {
-    min-width: 1440px;
+    min-width: 1600px;
     height: 102px;
 }
 
