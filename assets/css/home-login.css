@@ -193,6 +193,11 @@ body {
     margin: 10px;
 }
 
+.login__form-button:hover {
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+
 .contato__container {
     display: flex;
     flex-direction: column;
@@ -438,4 +443,142 @@ body {
 .footer__link > span:hover {
     font-weight: bold;
     color: var(--mediumgray);
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        min-width: 768px;
+        max-width: 993px;
+    }
+
+    .contato__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 28px;
+        gap: 115px;
+        min-width: 768px;
+        max-width: 993px;
+        height: 364px;
+    }
+    
+    .contato {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+    }
+    
+    .suporte {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+    }
+    
+    .suporte__logo {
+        width: 176px;
+        height: 50px;
+    }
+    
+    .suporte__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 0px;
+        gap: 24px;
+        width: 176px;
+        height: 234px;
+    }
+    
+    .suporte__item {
+        width: 176px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+    }
+    
+    .contato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 434px;
+        height: 229px;
+    }
+    
+    .contato__form-titulo {
+        width: 434px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .contato__fields {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 434px;
+        height: 300px;
+    }
+    
+    .contato__input__container{
+        width: 410px;
+        height: 56px;
+    }
+    
+    .contato__input:focus {
+        width: 405px;
+    }
+    
+    .contato__input__container--textarea,
+    .contato__input--textarea {
+        width: 410px;
+        height: 82px;
+    }
+    
+    .contato__input--textarea:focus {
+        width: 405px;
+    }
+    
+    .contato__elementos,
+    .contato__textos {
+        width: 410px;
+        height: 40px;
+    }
+    
+    .contato__elementos--textarea {
+        width: 405px;
+        height: 82px;
+    }
+    
+    .footer { 
+        min-width: 768px;
+        max-width: 993px;
+        height: 102px;
+    }
+    
+    .footer__p {
+        width: 234px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+      
 }
