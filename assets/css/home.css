@@ -185,7 +185,7 @@ body {
     "produtos__titulo produtos__p-container"
     "produtos__caneca produtos__darth-vader"
     "produtos__descricao1 produtos__descricao2"
-    "produtos__yoda produtos__stormstroper"
+    "produtos__yoda produtos__stormtroper"
     "produtos__descricao3 produtos__descricao4"
     ;
     grid-template-columns: repeat(2, 150px);
@@ -308,8 +308,8 @@ body {
     grid-area: produtos__yoda;
 }
 
-.produtos__stormstroper {
-    grid-area: produtos__stormstroper;
+.produtos__stormtroper {
+    grid-area: produtos__stormtroper;
 }
 
 .produtos__descricao1 {
@@ -788,7 +788,7 @@ body {
     display: grid;
     grid-template-areas: 
     "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
-    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormstroper"
+    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper"
     "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
     ;
     grid-template-columns: repeat(4, 160px);
@@ -1141,7 +1141,7 @@ header {
     display: grid;
     grid-template-areas: 
     "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
-    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormstroper produtos__baby-yoda produtos__lord-sith"
+    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper produtos__baby-yoda produtos__lord-sith"
     "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
     ;
     grid-template-columns: repeat(6, 200px);
@@ -1208,8 +1208,8 @@ header {
     grid-area: produtos__yoda;
 }
 
-.produtos__stormstroper {
-    grid-area: produtos__stormstroper;
+.produtos__stormtroper {
+    grid-area: produtos__stormtroper;
 }
 
 .produtos__baby-yoda {
