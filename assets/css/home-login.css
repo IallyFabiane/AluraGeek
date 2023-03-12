@@ -490,7 +490,7 @@ body {
         justify-content: space-between;
         padding: 8px 16px;
         gap: 0;
-        width: 272px;
+        width: 393px;
         height: 40px;
         background-color: var(--softgray);
         border-radius: 20px;
@@ -516,13 +516,6 @@ body {
         outline: none;
         caret-color: var(--mediumblue);
     } 
-
-    .menu__button {
-        order: 2;
-        width: 182px;
-        height: 51px;
-        margin-left: 20%;
-    }
 
     .login {
         min-width: 768px;
@@ -670,6 +663,85 @@ body {
     
     header {
         width: 1440px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 32px 0px;
+        margin: 0 auto;
+        gap: 30px;
+        width: 1136px;
+        height: 115px;
+    }
+    
+    .menu__logo {   
+        width: 176px;
+        height: 50px;
+        order: 0;
+        justify-self: flex-start;
+    }
+    
+    .menu__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        gap: 0;
+        width: 393px;
+        height: 40px;
+        background-color: var(--softgray);
+        border-radius: 20px;
+        order: 1;
+    }
+    
+    .menu__search-input {
+        width: 209px;
+        height: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: var(--softgray);
+        color: var(--mediumgray);
+        border: none;
+    }
+    
+    .menu__search-input:focus {
+        outline: none;
+        caret-color: var(--mediumblue);
+    } 
+
+    .login {
+        min-width: 1600px;
+        height: 400px;
+    }
+
+    .login__fields {
+        width: 423px;
+        height: 500px;
+    }
+
+    .login__form {
+        padding: 50px;
+        height: 300px;
+    }
+
+    .login__form-button {
+        width: 423px;
+        height: 62px;
+    }
+
+    .login__input__container,
+    .login__elementos {
+        width: 423px;
+        height: 62px;
     }
 
     .contato__container {
