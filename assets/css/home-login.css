@@ -659,6 +659,7 @@ body {
 
     html, body {
         overflow-x: visible;
+        min-width: 993px;
     }
     
     header {
@@ -749,7 +750,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        min-width: 1500px;
+        min-width: 1600px;
         height: 470px;
     }
     
