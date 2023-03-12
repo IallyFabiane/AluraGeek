@@ -47,3 +47,40 @@ function ocultaBarraDePesquisa() {
 searchIcon.addEventListener('click', () => {
     mostraBarraDePesquisa();
 });
+
+const campo1 = document.getElementById('campo1');
+const campo2 = document.getElementById('campo2');
+
+campo1.addEventListener('focus', (event) => {
+    let label = campo1.closest('.contato__elementos').querySelector('.contato__label');
+    event.target.closest('.contato__elementos').style.padding = "0px"; 
+    label.style.color = "#5595E9";
+    label.style.padding = "6px 12px";
+    campo1.style.borderBottom = "2px solid #5595E9";
+    console.log(event.target);
+});
+
+campo1.addEventListener('blur', () => {
+    let label = campo1.closest('.contato__elementos').querySelector('.contato__label');
+    campo1.closest('.contato__elementos').style.padding = "6px 12px";
+    label.style.color = "#A2A2A2";
+    label.style.padding = "0px";
+    campo1.style.borderBottom = "none";
+});
+
+
+campo2.addEventListener('focus', (event) => {
+    event.target.closest('.contato__elementos--textarea').style.padding = "0px 6px";
+    campo2.style.borderBottom = "2px solid #5595E9";
+    console.log(event.target)
+});
+
+campo2.addEventListener('blur', (event) => {
+    event.target.closest('.contato__elementos--textarea').style.padding = "0px 6px";
+    campo2.style.borderBottom = "none";
+});
+
+const contatoForm = document.querySelector('.contato__form');
+contatoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+})

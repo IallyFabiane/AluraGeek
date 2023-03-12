@@ -81,7 +81,12 @@ campo2.addEventListener('focus', (event) => {
     console.log(event.target)
 });
 
-campo2.addEventListener('blur', () => {
+campo2.addEventListener('blur', (event) => {
     event.target.closest('.contato__elementos--textarea').style.padding = "0px 6px";
     campo2.style.borderBottom = "none";
 });
+
+const contatoForm = document.querySelector('.contato__form');
+contatoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+})
