@@ -293,7 +293,7 @@ body {
     height: 254px;
 }
 
-  .contato__input__container {
+.contato__input__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -303,18 +303,18 @@ body {
     height: 56px;
     background-color: var(--white);
     border-radius: 4px;
-  }
+}
 
-  .contato__elementos {
+.contato__elementos {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 304px;
     height: 40px;
     padding: 6px 12px;
-  }
+}
 
-  .contato__textos {
+.contato__textos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -322,9 +322,9 @@ body {
     gap: 4px;
     width: 324px;
     height: 40px;
-  }
+}
 
-  .contato__label {
+.contato__label {
     width: 304px;
     height: 16px;
     font-family: 'Raleway';
@@ -333,10 +333,10 @@ body {
     font-size: 12px;
     line-height: 16px;
     color: var(--mediumgray);
-  }
+ }
 
-  .contato__input,
-  .contato__input--textarea {
+.contato__input,
+.contato__input--textarea {
     width: 98px;
     height: 20px;
     font-family: 'Raleway';
@@ -346,20 +346,20 @@ body {
     line-height: 20px;
     border: none;
     caret-color: var(--darkblue);
-  }
+}
 
-  .contato__input--textarea  {
+.contato__input--textarea  {
     width: 328px;
     height: 82px;
-  }
+}
 
-  .contato__input:focus,
-  .contato__input--textarea:focus {
+.contato__input:focus,
+.contato__input--textarea:focus {
     width: 324px;
     outline: none;
-  }
+}
 
-  .contato__input__container--textarea {
+.contato__input__container--textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -369,15 +369,15 @@ body {
     height: 82px;
     background-color: var(--white);
     border-radius: 4px;
-  }
+}
 
-  .contato__elementos--textarea {
+.contato__elementos--textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 328px;
     height: 82px;
-  }
+}
 
 .contato__button {
     display: flex;
@@ -454,6 +454,74 @@ body {
     body {
         min-width: 768px;
         max-width: 993px;
+    }
+
+    header {
+        width: 768px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 16px 32px;
+        margin: 0;
+        gap: 0;
+        width: 768px;
+        height: 72px;
+    }
+
+    .menu__logo {   
+        width: 100px;
+        height: 28px;
+        order: 0;
+    }
+
+    a > .menu__logo {
+        margin-right: 32px;
+        margin-top: 15px;
+    }
+    
+    .menu__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        gap: 0;
+        width: 272px;
+        height: 40px;
+        background-color: var(--softgray);
+        border-radius: 20px;
+        order: 1;
+    }
+
+    .menu__search-input {
+        width: 209px;
+        height: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: var(--softgray);
+        color: var(--mediumgray);
+        border: none;
+    }
+
+    .menu__search-input:focus {
+        outline: none;
+        caret-color: var(--mediumblue);
+    } 
+
+    .menu__button {
+        order: 2;
+        width: 182px;
+        height: 51px;
+        margin-left: 20%;
     }
 
     .contato__container {
