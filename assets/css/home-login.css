@@ -90,3 +90,105 @@ body {
 .menu__search-input:focus-within::placeholder {
     color: var(--darkblue);
 }
+
+.login {
+    background-color: var(--softgray);
+    min-width: 360px;
+    max-width: 410px;
+    height: 300px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 32px;
+    gap: 16px;
+    width: 328px;
+    height: 229px;
+}
+
+.login__form-titulo {
+    width: 105px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    white-space: nowrap;
+    text-align: center;
+    color: var(--darkgray);
+}
+
+.login__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+    width: 328px;
+    height: 254px;
+}
+
+.login__input__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 275px;
+    height: 41px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.login__elementos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 275px;
+    height: 41px;
+    padding: 6px 12px;
+}
+
+
+.login__input {
+    width: 150px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    caret-color: var(--darkblue);
+    color: var(--mediumgray);
+}
+
+.login__input:focus {
+    width: 258px;
+    outline: none;
+}
+
+.login__form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 109px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--darkblue);
+    color: var(--white);
+    margin: 10px;
+}

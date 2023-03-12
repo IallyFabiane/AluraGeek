@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/home-login.css">
     <link rel="shortcut icon" href="assets/img/login.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,6 +22,30 @@
             </form>    
         </nav>
     </header>
+    <main>
+        <section class="login">
+            <form class="login__form">
+                <fieldset>
+                    <legend class="login__form-titulo">Iniciar Sessão</legend>
+                </fieldset>
+                <fieldset class="login__fields">
+                    <div class="login__input__container">
+                        <div class="login__elementos">
+                          <input required name="name" class="login__input" id="campo1" type="text" placeholder="Eu seu nome" value=""></input>
+                        </div>
+                    </div>
+                    <div class="login__input__container">
+                        <div class="login__elementos">
+                           <input required name="email" class="login__input" id="campo1" type="text" placeholder="Escreva seu e-mail" value=""></input>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="login__form-button" type="submit">
+                    Enviar 
+                </button>
+            </form>
+        </section>
+    </main>
     <script src="js/login.js"></script>
 </body>
 </html>

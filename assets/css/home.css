@@ -527,7 +527,7 @@ body {
     gap: 16px;
     width: 328px;
     height: 254px;
-  }
+}
 
   .contato__input__container {
     display: flex;
@@ -615,7 +615,7 @@ body {
     height: 82px;
   }
 
-  .contato__button {
+.contato__button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -634,14 +634,13 @@ body {
     background-color: var(--darkblue);
     color: var(--white);
     margin: 10px;
-  }
+}
 
-
-  .contato__button:hover {
+.contato__button:hover {
     background-color: var(--softblue);
     color: var(--darkblue);
     border: 1px solid var(--darkblue);
-  }
+}
 
 .footer {
     display: flex;
