@@ -1012,15 +1012,15 @@ body {
   
 }
 
-@media (min-width: 993px) {
+@media (min-width: 994px) {
 
 html, body {
     overflow-x: visible;
-    min-width: 993px;
+    min-width: 994px;
 }
 
 header {
-    width: 1440px;
+    min-width: 1440px;
 }
 
 .menu {
@@ -1497,7 +1497,7 @@ header {
 }
 
 .footer {
-    min-width: 1600px;
+    min-width: 1800px;
     height: 102px;
 }
 
