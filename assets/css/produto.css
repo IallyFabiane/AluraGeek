@@ -1,0 +1,92 @@
+:root {
+    --darkblue:#2A7AE4;
+    --mediumblue: #5595E9;
+    --softblue: #D4E4FA;
+    --offwhite: #E5E5E5;
+    --softgray: #F5F5F5;
+    --blue: #EAF2FD;
+    --mediumgray: #A2A2A2;
+    --darkgray: #464646;
+    --white:#FFF;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 360px;
+    max-width: 410px;
+}
+
+.header {
+    width: 360px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    gap: 0px;
+    width: 340px;
+    height: 72px;
+    background-color: var(--white);
+}
+
+.menu__logo {
+    width: 100px;
+    height: 28px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu__search-input {
+   display: none;
+}
+
+.menu__search-input--mobile {
+    width: 159px;
+    height: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--softgray);
+    color: var(--mediumgray);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    caret-color: var(--mediumblue);
+}
+
+.menu__search {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+::-webkit-input-placeholder {
+    color: var(--mediumgray);
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+    color: var(--mediumgray);  
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--mediumgray);  
+  }
+  
+  :-ms-input-placeholder {  
+    color: var(--mediumgray);  
+}
+
+.menu__search-input:focus-within::placeholder {
+    color: var(--darkblue);
+}
