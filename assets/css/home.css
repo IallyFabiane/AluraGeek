@@ -179,6 +179,10 @@ body {
     border: 1px solid var(--mediumblue);
 }
 
+#produtos__star-wars {
+    background-color: var(--softgray);
+}
+
 .produtos__star-wars {
     display: grid;
     grid-template-areas: 
@@ -328,6 +332,10 @@ body {
     grid-area: produtos__descricao4;
 }
 
+#produtos__consoles {
+    background-color: var(--softgray);
+}
+
 .produtos__consoles {
     display: grid;
     grid-template-areas: 
@@ -379,6 +387,10 @@ body {
 
 .produtos__descricao4 {
     grid-area: produtos__descricao4;
+}
+
+#produtos__diversos {
+    background-color: var(--softgray);
 }
 
 .produtos__diversos {
@@ -683,827 +695,828 @@ body {
 
 @media (min-width: 768px) and (max-width: 993px) {
 
-html, body {
-    overflow-x: hidden;
-}
+    html, body {
+        overflow-x: hidden;
+    }
 
-body {
-    min-width: 768px;
-    max-width: 993px;
-}
+    body {
+        min-width: 768px;
+        max-width: 993px;
+    }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 0px;
-    margin: 0 auto;
-    gap: 20px;
-    width: 768px;
-    height: 72px;
-}
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 0px;
+        margin: 0 auto;
+        gap: 20px;
+        width: 768px;
+        height: 72px;
+    }
 
-.menu__search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 16px;
-    gap: 0;
-    width: 272px;
-    height: 40px;
-    background-color: var(--softgray);
-    border-radius: 20px;
-    order: 1;
-}
+    .menu__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        gap: 0;
+        width: 272px;
+        height: 40px;
+        background-color: var(--softgray);
+        border-radius: 20px;
+        order: 1;
+    }
 
-.menu__search-input {
-    width: 159px;
-    height: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    background-color: var(--softgray);
-    color: var(--mediumgray);
-    border: none;
-}
+    .menu__search-input {
+        width: 159px;
+        height: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: var(--softgray);
+        color: var(--mediumgray);
+        border: none;
+    }
 
-.menu__search-input:focus {
-    outline: none;
-    caret-color: var(--mediumblue);
-}
+    .menu__search-input:focus {
+        outline: none;
+        caret-color: var(--mediumblue);
+    }
 
-.menu__button {
-    order: 2;
-    margin-left: 50px;
-    width: 166px;
-    height: 40px;
-}
+    .menu__button {
+        order: 2;
+        margin-left: 50px;
+        width: 166px;
+        height: 40px;
+    }
 
-.menu__search-icon {
-    order: 1;
-}
+    .menu__search-icon {
+        order: 1;
+    }
 
-.promocional {
-    min-width: 768px;
-    max-width: 993px;
-    padding: 32px;
-    gap: 16px;
-    height: 352px;
-}
+    .promocional {
+        min-width: 768px;
+        max-width: 993px;
+        padding: 32px;
+        gap: 16px;
+        height: 352px;
+    }
 
-.promocional__texto {
-    gap: 16px;
-    width: 704px;
-    height: 159px;
-}
+    .promocional__texto {
+        gap: 16px;
+        width: 704px;
+        height: 159px;
+    }
 
-.promocional__h1 {
-    width: 704px;
-    height: 61px;
-    font-size: 52px;
-    line-height: 61px;
-}
+    .promocional__h1 {
+        width: 704px;
+        height: 61px;
+        font-size: 52px;
+        line-height: 61px;
+    }
 
-.promocional__h3 { 
-    width: 704px;
-    height: 26px;
-    font-size: 22px;
-    line-height: 26px;
-}
+    .promocional__h3 { 
+        width: 704px;
+        height: 26px;
+        font-size: 22px;
+        line-height: 26px;
+    }
 
-.promocional__button {
-    padding: 12px 16px;
-    gap: 10px;
-    width: 119px;
-    height: 40px;
-}
+    .promocional__button {
+        padding: 12px 16px;
+        gap: 10px;
+        width: 119px;
+        height: 40px;
+    }
 
-.produtos__star-wars {
-    display: grid;
-    grid-template-areas: 
-    "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
-    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper"
-    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
-    ;
-    grid-template-columns: repeat(4, 160px);
-    grid-template-rows: 40px 180px 86px;
-    padding: 16px 10px;
-    margin: 0 auto;
-    padding: 10px;
-    column-gap: 0;
-    row-gap: 10px;
-    min-width: 768px;
-    max-width: 993px;
-    height: 358px;
-    place-content: center;
-}
+    .produtos__star-wars {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
+        "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
+        ;
+        grid-template-columns: repeat(4, 160px);
+        grid-template-rows: 40px 180px 86px;
+        padding: 16px 10px;
+        margin: 0 auto;
+        padding: 10px;
+        column-gap: 0;
+        row-gap: 10px;
+        min-width: 768px;
+        height: 358px;
+        place-content: center;
+    }
 
-.produtos__img--desktop,
-.produtos__descricao--desktop {
-    display: none;
-}
+    .produtos__img--desktop,
+    .produtos__descricao--desktop {
+        display: none;
+    }
 
-.produtos__titulo {
-    font-size: 22px;
-    line-height: 26px;
-    width: 102px;
-    height: 26px;
-    padding-left: 4px;
-}
+    .produtos__titulo {
+        font-size: 22px;
+        line-height: 26px;
+        width: 102px;
+        height: 26px;
+        padding-left: 4px;
+    }
 
-.produtos__p-container {
-    gap: 4px;
-    width: 98px;
-    height: 24px;
-    margin-left: 65%;
-}
+    .produtos__p-container {
+        gap: 4px;
+        width: 98px;
+        height: 24px;
+        margin-left: 65%;
+    }
 
-.produtos__p {
-    width: 66px;
-    height: 19px;
-    font-size: 16px;
-    line-height: 19px;
-}
+    .produtos__p {
+        width: 66px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }
 
-.produtos__img {
-    width: 150px;
-    height: 174px;
-}
+    .produtos__img {
+        width: 150px;
+        height: 174px;
+    }
 
-.produtos__descricao-h3, 
-.produtos__descricao-h4 {
-    width: 164px;
-}
+    .produtos__descricao-h3, 
+    .produtos__descricao-h4 {
+        width: 164px;
+    }
 
-.produtos__descricao-p {
-    width: 91px;
-}
+    .produtos__descricao-p {
+        width: 91px;
+    }
 
-.produtos__consoles {
-    display: grid;
-    grid-template-areas: 
-    "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
-    "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch"
-    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
-    ;
-    grid-template-columns: repeat(4, 160px);
-    grid-template-rows: 40px 180px 86px;
-    padding: 16px 10px;
-    margin: 0 auto;
-    padding: 10px;
-    column-gap: 0;
-    row-gap: 10px;
-    min-width: 768px;
-    max-width: 993px;
-    height: 358px;
-    place-content: center;
-}
+    .produtos__consoles {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
+        "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
+        ;
+        grid-template-columns: repeat(4, 160px);
+        grid-template-rows: 40px 180px 86px;
+        padding: 16px 10px;
+        margin: 0 auto;
+        padding: 10px;
+        column-gap: 0;
+        row-gap: 10px;
+        min-width: 768px;
+        height: 358px;
+        place-content: center;
+    }
 
-.produtos__diversos {
-    display: grid;
-    grid-template-areas: 
-    "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
-    "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio"
-    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
-    ;
-    grid-template-columns: repeat(4, 160px);
-    grid-template-rows: 40px 180px 86px;
-    padding: 16px 10px;
-    margin: 0 auto;
-    padding: 10px;
-    column-gap: 0;
-    row-gap: 10px;
-    min-width: 768px;
-    max-width: 993px;
-    height: 358px;
-    place-content: center;
-}
+    .produtos__diversos {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__p-container produtos__p-container"
+        "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
+        ;
+        grid-template-columns: repeat(4, 160px);
+        grid-template-rows: 40px 180px 86px;
+        padding: 16px 10px;
+        margin: 0 auto;
+        padding: 10px;
+        column-gap: 0;
+        row-gap: 10px;
+        min-width: 768px;
+        height: 358px;
+        place-content: center;
+    }
 
-.contato__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 28px;
-    gap: 115px;
-    min-width: 768px;
-    max-width: 993px;
-    height: 364px;
-}
+    .contato__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 28px;
+        gap: 115px;
+        min-width: 768px;
+        max-width: 993px;
+        height: 364px;
+    }
 
-.contato {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 704px;
-    height: 300px;
-}
+    .contato {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+    }
 
-.suporte {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 254px;
-    height: 300px;
-}
+    .suporte {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+    }
 
-.suporte__logo {
-    width: 176px;
-    height: 50px;
-}
+    .suporte__logo {
+        width: 176px;
+        height: 50px;
+    }
 
-.suporte__lista {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    padding: 0px;
-    gap: 24px;
-    width: 176px;
-    height: 234px;
-}
+    .suporte__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 0px;
+        gap: 24px;
+        width: 176px;
+        height: 234px;
+    }
 
-.suporte__item {
-    width: 176px;
-    height: 19px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: left;
-}
+    .suporte__item {
+        width: 176px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+    }
 
-.contato__form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 434px;
-    height: 229px;
-}
+    .contato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 434px;
+        height: 229px;
+    }
 
-.contato__form-titulo {
-    width: 434px;
-    height: 19px;
-    font-size: 16px;
-    line-height: 19px;
-}
+    .contato__form-titulo {
+        width: 434px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }
 
-.contato__fields {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-    width: 434px;
-    height: 300px;
-}
+    .contato__fields {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 434px;
+        height: 300px;
+    }
 
-.contato__input__container{
-    width: 410px;
-    height: 56px;
-}
+    .contato__input__container{
+        width: 410px;
+        height: 56px;
+    }
 
-.contato__input:focus {
-    width: 405px;
-}
+    .contato__input:focus {
+        width: 405px;
+    }
 
-.contato__input__container--textarea,
-.contato__input--textarea {
-    width: 410px;
-    height: 82px;
-}
+    .contato__input__container--textarea,
+    .contato__input--textarea {
+        width: 410px;
+        height: 82px;
+    }
 
-.contato__input--textarea:focus {
-    width: 405px;
-}
+    .contato__input--textarea:focus {
+        width: 405px;
+    }
 
-.contato__elementos,
-.contato__textos {
-    width: 410px;
-    height: 40px;
-}
+    .contato__elementos,
+    .contato__textos {
+        width: 410px;
+        height: 40px;
+    }
 
-.contato__elementos--textarea {
-    width: 405px;
-    height: 82px;
-}
+    .contato__elementos--textarea {
+        width: 405px;
+        height: 82px;
+    }
 
-.footer { 
-    min-width: 768px;
-    max-width: 993px;
-    height: 102px;
-}
+    .footer { 
+        min-width: 768px;
+        max-width: 993px;
+        height: 102px;
+    }
 
-.footer__p {
-    width: 234px;
-    height: 38px;
-    font-size: 16px;
-    line-height: 19px;
-}
-  
+    .footer__p {
+        width: 234px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
 }
 
 @media (min-width: 994px) {
 
-html, body {
-    overflow-x: visible;
-    min-width: 994px;
-}
-
-header {
-    min-width: 1440px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0px;
-    margin: 0 auto;
-    gap: 30px;
-    width: 1136px;
-    height: 115px;
-}
-
-.menu__logo {   
-    width: 176px;
-    height: 50px;
-    order: 0;
-    justify-self: flex-start;
-}
-
-.menu__search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 16px;
-    gap: 0;
-    width: 393px;
-    height: 40px;
-    background-color: var(--softgray);
-    border-radius: 20px;
-    order: 1;
-}
-
-.menu__search-input {
-    width: 209px;
-    height: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    background-color: var(--softgray);
-    color: var(--mediumgray);
-    border: none;
-}
-
-.menu__search-input:focus {
-    outline: none;
-    caret-color: var(--mediumblue);
-} 
-
-.menu__button {
-    order: 2;
-    width: 182px;
-    height: 51px;
-    margin-left: 20%;
-}
-
-.promocional {
-    padding: 32px;
-    gap: 32px;
-    min-width: 1600px;
-    height: 352px;
-}
-
-.promocional__texto {
-    width: 1136px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    margin: 0 auto;
-}
-
-.promocional__h1 {
-    width: 751px;
-    height: 61px;
-    font-size: 52px;
-    line-height: 61px;
-}
-
-.promocional__h3 {
-    width: 751px;
-    height: 26px;
-    font-size: 22px;
-    line-height: 26px;
-}
-
-.promocional__button {
-    padding: 16px;
-    gap: 20px;
-    width: 130px;
-    height: 51px;
-}
-
-#produtos__star-wars {
-    min-width: 1600px;
-}
-
-.produtos__img--desktop {
-    display: block;
-}
-
-.produtos__descricao--desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.produtos__star-wars {
-    display: grid;
-    grid-template-areas: 
-    "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
-    "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper produtos__baby-yoda produtos__lord-sith"
-    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
-    ;
-    grid-template-columns: repeat(6, 200px);
-    grid-template-rows: 150px 230px 120px;
-    padding: 32px 10px;
-    padding: 0px;
-    gap: 16px;
-    margin: 0 auto;
-    width: 1136px;
-    height: 450px;
-    place-items: center;
-}
-
-.produtos__titulo {
-    grid-area: produtos__titulo;
-    width: 148px;
-    height: 38px;
-    font-size: 32px;
-    line-height: 38px;
-    justify-self: left;
-    align-self: end;
-    margin-left: 10px;
-}
-
-.produtos__p-container {
-    grid-area: produtos__p-container;
-    padding: 0px;
-    gap: 0;
-    width: 98px;
-    height: 24px;
-    margin-left: 500px;
-    justify-self: right;
-    align-self: end;
-}
-
-.produtos__p {
-    width: 66px;
-    height: 19px;
-}
-
-.produtos__img,
-.produtos__img--desktop {
-    width: 176px;
-   height: 174px;
-}
-
-.produtos__descricao,
-.produtos__descricao--desktop {
-    padding: 0px;
-    gap: 8px;
-    width: 176px;
-    height: 174px;
-}
-
-.produtos__caneca {
-    grid-area: produtos__caneca;
-}
-
-.produtos__darth-vader {
-    grid-area: produtos__darth-vader;
-}
-
-.produtos__yoda {
-    grid-area: produtos__yoda;
-}
-
-.produtos__stormtroper {
-    grid-area: produtos__stormtroper;
-}
-
-.produtos__baby-yoda {
-    grid-area: produtos__baby-yoda;
-}
-
-.produtos__lord-sith {
-    grid-area: produtos__lord-sith;
-}
-
-.produtos__descricao1 {
-    grid-area: produtos__descricao1;
-}
-
-.produtos__descricao2 {
-    grid-area: produtos__descricao2;
-}
-
-.produtos__descricao3 {
-    grid-area: produtos__descricao3;
-}
-
-.produtos__descricao4 {
-    grid-area: produtos__descricao4;
-}
-
-.produtos__descricao5 {
-    grid-area: produtos__descricao5;
-}
-
-.produtos__descricao6 {
-    grid-area: produtos__descricao6;
-}
-
-#produtos__consoles {
-    min-width: 1600px;
-}
-
-.produtos__consoles {
-    display: grid;
-    grid-template-areas: 
-    "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
-    "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch produtos__xbox-x produtos__game-boy"
-    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
-    ;
-    grid-template-columns: repeat(6, 200px);
-    grid-template-rows: 150px 230px 120px;
-    padding: 32px 10px;
-    padding: 0px;
-    gap: 16px;
-    margin: 0 auto;
-    width: 1136px;
-    height: 450px;
-    place-items: center;
-}
-
-.produtos__joystick {
-    grid-area: produtos__joystick;
-}
-
-.produtos__playstation {
-    grid-area: produtos__playstation;
-}
-
-.produtos__nintendo {
-    grid-area: produtos__nintendo;
-}
-
-.produtos__nintendo-switch {
-    grid-area: produtos__nintendo-switch;
-}
-
-.produtos__xbox-x {
-    grid-area: produtos__xbox-x;
-}
-
-.produtos__game-boy {
-    grid-area: produtos__game-boy;
-}
-
-.produtos__descricao1 {
-    grid-area: produtos__descricao1;
-}
-
-.produtos__descricao2 {
-    grid-area: produtos__descricao2;
-}
-
-.produtos__descricao3 {
-    grid-area: produtos__descricao3;
-}
-
-.produtos__descricao4 {
-    grid-area: produtos__descricao4;
-}
-
-.produtos__descricao5 {
-    grid-area: produtos__descricao5;
-}
-
-.produtos__descricao6 {
-    grid-area: produtos__descricao6;
-}
-
-#produtos__diversos {
-    min-width: 1600px;
-}
-
-.produtos__diversos {
-    display: grid;
-    grid-template-areas: 
-    "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
-    "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio produtos__oculos produtos__pikachu"
-    "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
-    ;
-    grid-template-columns: repeat(6, 200px);
-    grid-template-rows: 150px 230px 120px;
-    padding: 32px 10px;
-    padding: 0px;
-    gap: 16px;
-    margin: 0 auto;
-    width: 1136px;
-    height: 450px;
-    place-items: center;
-}
-
-.produtos__atari {
-    grid-area: produtos__atari;
-}
-
-.produtos__snes {
-    grid-area: produtos__snes;
-}
-
-.produtos__sonic {
-    grid-area: produtos__sonic;
-}
-
-.produtos__radio-relogio {
-    grid-area: produtos__radio-relogio;
-}
-
-.produtos__oculos {
-    grid-area: produtos__oculos;
-}
-
-.produtos__pikachu {
-    grid-area: produtos__pikachu;
-}
-
-.produtos__descricao1 {
-    grid-area: produtos__descricao1;
-}
-
-.produtos__descricao2 {
-    grid-area: produtos__descricao2;
-}
-
-.produtos__descricao3 {
-    grid-area: produtos__descricao3;
-}
-
-.produtos__descricao4 {
-    grid-area: produtos__descricao4;
-}
-
-.produtos__descricao5 {
-    grid-area: produtos__descricao5;
-}
-
-.produtos__descricao6 {
-    grid-area: produtos__descricao6;
-}
-
-.contato__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    min-width: 1600px;
-    height: 470px;
-}
-
-.contato {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 64px;
-    margin: 0 auto;
-    gap: 10px;
-    width: 1200px;
-    height: 368px;
-}
-
-.suporte {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 100px;
-    width: 600px;
-    height: 240px;
-}
-
-.suporte__logo {
-    width: 176px;
-    height: 50px;
-}
-
-.suporte__lista {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    width: 176px;
-    height: 234px;
-}
-
-.suporte__item {
-    width: 176px;
-    height: 19px;
-    text-align: left;
-}
-
-.contato__form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 560px;
-    height: 240px;
-}
-
-.contato__form-titulo {
-    width: 560px;
-    height: 19px;
-}
-
-.contato__fields {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 560px;
-    height: 250px;
-}
-
-.contato__input__container,
-.contato__input__container--textarea {
-    width: 560px;
-}
-
-.contato__input {
-    width: 536px;
-}
-
-.contato__input--textarea {
-    width: 560px;
-    height: 78px;
-}
-
-.contato__input:focus,
-.contato__input--textarea:focus {
-    width: 556px;
-}
-
-.contato__elementos {
-    width: 560px;
-    height: 56px;
-}
-
-.contato__textos {
-    width: 536px;
-    height: 40px;
-}
-
-.contato__elementos--textarea {
-    width: 555px;
-    height: 82px;
-    padding: 0;
-}
-
-.footer {
-    min-width: 1800px;
-    height: 102px;
-}
-
-.footer__p {
-   width: 234px;
-   height: 38px;
-}
+    html, body {
+        overflow-x: visible;
+        min-width: 994px;
+    }
+
+    header {
+        min-width: 1440px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0px;
+        margin: 0 auto;
+        gap: 30px;
+        width: 1136px;
+        height: 115px;
+    }
+
+    .menu__logo {   
+        width: 176px;
+        height: 50px;
+        order: 0;
+        justify-self: flex-start;
+    }
+
+    .menu__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        gap: 0;
+        width: 393px;
+        height: 40px;
+        background-color: var(--softgray);
+        border-radius: 20px;
+        order: 1;
+    }
+
+    .menu__search-input {
+        width: 209px;
+        height: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: var(--softgray);
+        color: var(--mediumgray);
+        border: none;
+    }
+
+    .menu__search-input:focus {
+        outline: none;
+        caret-color: var(--mediumblue);
+    } 
+
+    .menu__button {
+        order: 2;
+        width: 182px;
+        height: 51px;
+        margin-left: 20%;
+    }
+
+    .promocional {
+        padding: 32px;
+        gap: 32px;
+        min-width: 1800px;
+        height: 352px;
+    }
+
+    .promocional__texto {
+        width: 1136px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .promocional__h1 {
+        width: 751px;
+        height: 61px;
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .promocional__h3 {
+        width: 751px;
+        height: 26px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .promocional__button {
+        padding: 16px;
+        gap: 20px;
+        width: 130px;
+        height: 51px;
+    }
+
+    #produtos__star-wars {
+        min-width: 1600px;
+    }
+
+    .produtos__img--desktop {
+        display: block;
+    }
+
+    .produtos__descricao--desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #produtos__star-wars {
+        min-width: 1800px;
+    }
+
+    .produtos__star-wars {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
+        "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper produtos__baby-yoda produtos__lord-sith"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+        ;
+        grid-template-columns: repeat(6, 200px);
+        grid-template-rows: 150px 230px 120px;
+        padding: 32px 10px;
+        padding: 0px;
+        gap: 16px;
+        margin: 0 auto;
+        width: 1136px;
+        height: 450px;
+        place-items: center;
+    }
+
+    .produtos__titulo {
+        grid-area: produtos__titulo;
+        width: 148px;
+        height: 38px;
+        font-size: 32px;
+        line-height: 38px;
+        justify-self: left;
+        align-self: end;
+        margin-left: 10px;
+    }
+
+    .produtos__p-container {
+        grid-area: produtos__p-container;
+        padding: 0px;
+        gap: 0;
+        width: 98px;
+        height: 24px;
+        margin-left: 500px;
+        justify-self: right;
+        align-self: end;
+    }
+
+    .produtos__p {
+        width: 66px;
+        height: 19px;
+    }
+
+    .produtos__img,
+    .produtos__img--desktop {
+        width: 176px;
+        height: 174px;
+    }
+
+    .produtos__descricao,
+    .produtos__descricao--desktop {
+        padding: 0px;
+        gap: 8px;
+        width: 176px;
+        height: 174px;
+    }
+
+    .produtos__caneca {
+        grid-area: produtos__caneca;
+    }
+
+    .produtos__darth-vader {
+        grid-area: produtos__darth-vader;
+    }
+
+    .produtos__yoda {
+        grid-area: produtos__yoda;
+    }
+
+    .produtos__stormtroper {
+        grid-area: produtos__stormtroper;
+    }
+
+    .produtos__baby-yoda {
+        grid-area: produtos__baby-yoda;
+    }
+
+    .produtos__lord-sith {
+        grid-area: produtos__lord-sith;
+    }
+
+    .produtos__descricao1 {
+        grid-area: produtos__descricao1;
+    }
+
+    .produtos__descricao2 {
+        grid-area: produtos__descricao2;
+    }
+
+    .produtos__descricao3 {
+        grid-area: produtos__descricao3;
+    }
+
+    .produtos__descricao4 {
+        grid-area: produtos__descricao4;
+    }
+
+    .produtos__descricao5 {
+        grid-area: produtos__descricao5;
+    }
+
+    .produtos__descricao6 {
+        grid-area: produtos__descricao6;
+    }
+
+    #produtos__consoles {
+        min-width: 1800px;
+    }
+
+    .produtos__consoles {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
+        "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch produtos__xbox-x produtos__game-boy"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+        ;
+        grid-template-columns: repeat(6, 200px);
+        grid-template-rows: 150px 230px 120px;
+        padding: 32px 10px;
+        padding: 0px;
+        gap: 16px;
+        margin: 0 auto;
+        width: 1136px;
+        height: 450px;
+        place-items: center;
+    }
+
+    .produtos__joystick {
+        grid-area: produtos__joystick;
+    }
+
+    .produtos__playstation {
+        grid-area: produtos__playstation;
+    }
+
+    .produtos__nintendo {
+        grid-area: produtos__nintendo;
+    }
+
+    .produtos__nintendo-switch {
+        grid-area: produtos__nintendo-switch;
+    }
+
+    .produtos__xbox-x {
+        grid-area: produtos__xbox-x;
+    }
+
+    .produtos__game-boy {
+        grid-area: produtos__game-boy;
+    }
+
+    .produtos__descricao1 {
+        grid-area: produtos__descricao1;
+    }
+
+    .produtos__descricao2 {
+        grid-area: produtos__descricao2;
+    }
+
+    .produtos__descricao3 {
+        grid-area: produtos__descricao3;
+    }
+
+    .produtos__descricao4 {
+        grid-area: produtos__descricao4;
+    }
+
+    .produtos__descricao5 {
+        grid-area: produtos__descricao5;
+    }
+
+    .produtos__descricao6 {
+        grid-area: produtos__descricao6;
+    }
+
+    #produtos__diversos {
+        min-width: 1800px;
+    }
+
+    .produtos__diversos {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__titulo produtos__p-container produtos__p-container produtos__p-container"
+        "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio produtos__oculos produtos__pikachu"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+        ;
+        grid-template-columns: repeat(6, 200px);
+        grid-template-rows: 150px 230px 120px;
+        padding: 32px 10px;
+        padding: 0px;
+        gap: 16px;
+        margin: 0 auto;
+        width: 1136px;
+        height: 450px;
+        place-items: center;
+    }
+
+    .produtos__atari {
+        grid-area: produtos__atari;
+    }
+
+    .produtos__snes {
+        grid-area: produtos__snes;
+    }
+
+    .produtos__sonic {
+        grid-area: produtos__sonic;
+    }
+
+    .produtos__radio-relogio {
+        grid-area: produtos__radio-relogio;
+    }
+
+    .produtos__oculos {
+        grid-area: produtos__oculos;
+    }
+
+    .produtos__pikachu {
+        grid-area: produtos__pikachu;
+    }
+
+    .produtos__descricao1 {
+        grid-area: produtos__descricao1;
+    }
+
+    .produtos__descricao2 {
+        grid-area: produtos__descricao2;
+    }
+
+    .produtos__descricao3 {
+        grid-area: produtos__descricao3;
+    }
+
+    .produtos__descricao4 {
+        grid-area: produtos__descricao4;
+    }
+
+    .produtos__descricao5 {
+        grid-area: produtos__descricao5;
+    }
+
+    .produtos__descricao6 {
+        grid-area: produtos__descricao6;
+    }
+
+    .contato__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        min-width: 1800px;
+        height: 470px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 64px;
+        margin: 0 auto;
+        gap: 10px;
+        width: 1200px;
+        height: 368px;
+    }
+
+    .suporte {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 100px;
+        width: 600px;
+        height: 240px;
+    }
+
+    .suporte__logo {
+        width: 176px;
+        height: 50px;
+    }
+
+    .suporte__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 176px;
+        height: 234px;
+    }
+
+    .suporte__item {
+        width: 176px;
+        height: 19px;
+        text-align: left;
+    }
+
+    .contato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 560px;
+        height: 240px;
+    }
+
+    .contato__form-titulo {
+        width: 560px;
+        height: 19px;
+    }
+
+    .contato__fields {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 560px;
+        height: 250px;
+    }
+
+    .contato__input__container,
+    .contato__input__container--textarea {
+        width: 560px;
+    }
+
+    .contato__input {
+        width: 536px;
+    }
+
+    .contato__input--textarea {
+        width: 560px;
+        height: 78px;
+    }
+
+    .contato__input:focus,
+    .contato__input--textarea:focus {
+        width: 556px;
+    }
+
+    .contato__elementos {
+        width: 560px;
+        height: 56px;
+    }
+
+    .contato__textos {
+        width: 536px;
+        height: 40px;
+    }
+
+    .contato__elementos--textarea {
+        width: 555px;
+        height: 82px;
+        padding: 0;
+    }
+
+    .footer {
+        min-width: 1800px;
+        height: 102px;
+    }
+
+    .footer__p {
+        width: 234px;
+        height: 38px;
+    }
 
 }
