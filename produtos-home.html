@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" target="_self" rel="prev"><img class="menu__logo" src="assets/img/logo.png" alt="logotipo"></a>
+            <form class="menu__search">
+                <input class="menu__search-input" type="text" placeholder="O que deseja encontrar?"></input>
+                <svg class='menu__search-icon' xmlns="http://www.w3.org/2000/svg" fill="#A2A2A2" width="24" height="24" viewBox="0 0 24 24"><path  d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/></svg>
+            </form>    
+        </nav>
+    </header>
+    <main>
+        <section class="contato__container">
+            <article class="contato">
+                 <div class="suporte">
+                     <img class="suporte__logo" src="assets/img/logo.png" alt="logotipo">
+                     <ul class="suporte__lista">
+                         <li class="suporte__item">Quem somos nós</li>
+                         <li class="suporte__item">Política de Privacidade</li>
+                         <li class="suporte__item">Programa fidelidade</li>
+                         <li class="suporte__item">Nossas lojas</li>
+                         <li class="suporte__item">Quero ser franqueado</li>
+                         <li class="suporte__item">Anuncie aqui</li>
+                     </ul>
+                 </div>
+                 <form class="contato__form">
+                     <fieldset>
+                         <legend class="contato__form-titulo">Fale conosco</legend>
+                     </fieldset>
+                     <fieldset class="contato__fields">
+                         <div class="contato__input__container">
+                             <div class="contato__elementos">
+                                 <div class="contato__textos">
+                                     <label for="name" class="contato__label">Nome</label>
+                                     <input required name="name" class="contato__input" id="campo1" type="text" placeholder="Seu nome" value=""></input>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="container__nome" style="color: red; font-weight: bold;"></div>
+                         <div class="contato__input__container--textarea">
+                             <div class="contato__elementos--textarea">
+                                 <textarea required name="message" class="contato__input--textarea" id="campo2" placeholder="Escreva sua mensagem" rows="5" cols="30" wrap="hard"></textarea>
+                             </div>
+                         </div>
+                         <div class="container__mensagem" style="color: red; font-weight: bold;"></div>
+                     </fieldset>
+                     <button class="contato__button" type="submit">
+                         Enviar Mensagem 
+                     </button>
+                 </form>
+            </article>
+         </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">Desenvolvido por <a class="footer__link" href="https://www.linkedin.com/in/ially-fabiane-a15877223/" target="_blank" rel="external"><span>Ially Fabiane</span></a> 2023</p>
+    </footer>
+    <script src="js/produtos.js"></script>
+</body>
+</html>
