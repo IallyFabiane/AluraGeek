@@ -257,6 +257,7 @@ body {
     color: var(--darkblue);
 }
 
+
 .produtos__descricao-p > a {
     text-decoration: none;
 }
@@ -298,6 +299,21 @@ body {
 
 .produtos__link {
     text-decoration: none;
+}
+
+.produtos__link:hover {
+    animation: bounce 1.5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateX(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
 }
 
 .produtos__caneca {
@@ -541,7 +557,7 @@ body {
     height: 254px;
 }
 
-  .contato__input__container {
+.contato__input__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -551,18 +567,18 @@ body {
     height: 56px;
     background-color: var(--white);
     border-radius: 4px;
-  }
+}
 
-  .contato__elementos {
+.contato__elementos {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 304px;
     height: 40px;
     padding: 6px 12px;
-  }
+}
 
-  .contato__textos {
+.contato__textos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -570,9 +586,9 @@ body {
     gap: 4px;
     width: 324px;
     height: 40px;
-  }
+}
 
-  .contato__label {
+.contato__label {
     width: 304px;
     height: 16px;
     font-family: 'Raleway';
@@ -581,10 +597,10 @@ body {
     font-size: 12px;
     line-height: 16px;
     color: var(--mediumgray);
-  }
+}
 
-  .contato__input,
-  .contato__input--textarea {
+.contato__input,
+.contato__input--textarea {
     width: 98px;
     height: 20px;
     font-family: 'Raleway';
@@ -594,20 +610,20 @@ body {
     line-height: 20px;
     border: none;
     caret-color: var(--darkblue);
-  }
+}
 
-  .contato__input--textarea  {
+.contato__input--textarea  {
     width: 328px;
     height: 82px;
-  }
+}
 
-  .contato__input:focus,
-  .contato__input--textarea:focus {
+.contato__input:focus,
+.contato__input--textarea:focus {
     width: 324px;
     outline: none;
-  }
+}
 
-  .contato__input__container--textarea {
+.contato__input__container--textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -617,15 +633,15 @@ body {
     height: 82px;
     background-color: var(--white);
     border-radius: 4px;
-  }
+}
 
-  .contato__elementos--textarea {
+.contato__elementos--textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 328px;
     height: 82px;
-  }
+}
 
 .contato__button {
     display: flex;
