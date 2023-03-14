@@ -162,7 +162,7 @@ body {
 
 #produtos__similares {
     background-color: var(--softgray);
-    max-width: 360px;
+    min-width: 360px;
     max-width: 410px;
 }
 
@@ -646,6 +646,72 @@ body {
     .detalhamento__produto-info--descricao {
         width: 400px;
         height: 96px;
+    }
+
+    #produtos__similares {
+        min-width: 768px;
+        max-width: 993px;
+    }
+    
+    .produtos__similares {
+        display: grid;
+        grid-template-areas: 
+        "produtos__similares-h2 produtos__similares-h2 produtos__similares-h2 produtos__similares-h2"
+        "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
+        ;
+        grid-template-columns: repeat(4, 175px);
+        grid-template-rows: 40px 180px 86px;
+        padding: 16px 10px;
+        margin: 0 auto;
+        padding: 10px;
+        column-gap: 0;
+        row-gap: 10px;
+        min-width: 768px;
+        max-width: 993px;
+        height: 358px;
+        place-content: center;
+    }
+
+    .produtos__img--desktop,
+    .produtos__descricao--desktop {
+        display: none;
+    }
+
+    .produtos__similares-h2 {
+        font-size: 22px;
+        line-height: 26px;
+        width: 102px;
+        height: 26px;
+        padding-left: 4px;
+    }
+
+    .produtos__p-container {
+        gap: 4px;
+        width: 98px;
+        height: 24px;
+        margin-left: 65%;
+    }
+
+    .produtos__p {
+        width: 66px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .produtos__img {
+        width: 164px;
+        height: 174px;
+    }
+
+    .produtos__descricao-h3, 
+    .produtos__descricao-h4 {
+        width: 164px;
+    }
+
+    .produtos__descricao-p {
+        width: 91px;
     }
 
     .contato__container {
