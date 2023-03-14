@@ -622,6 +622,7 @@ body {
         min-width: 768px;
         max-width: 993px;
         height: 221px;
+        background-color: var(--softgray);
     }
 
     .detalhamento__produto-infos {
@@ -644,13 +645,23 @@ body {
     }
 
     .detalhamento__produto-info--descricao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
         width: 400px;
         height: 96px;
+    }
+
+    .produto__banner {
+        display: none;
     }
 
     #produtos__similares {
         min-width: 768px;
         max-width: 993px;
+        background-color: var(--softgray);
     }
     
     .produtos__similares {
@@ -903,6 +914,64 @@ body {
         outline: none;
         caret-color: var(--mediumblue);
     } 
+
+    .detalhamento__produto-info {
+        min-width: 1800px;
+        height: 403px;
+        background-color: var(--softgray);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 150px;
+        gap: 32px;
+    }
+
+    .produto__banner {
+        display: none;
+    }
+
+    .detalhamento__produto-info-img {
+        display: block;
+        width: 560px;
+        height: 403px;
+    }
+
+    .detalhamento__produto-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 760px;
+        height: 210px;
+    }
+
+    .detalhamento__produto-info--h2 {
+        width: 760px;
+        height: 61px;
+        font-size: 52px;
+        line-height: 61px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .detalhamento__produto-info--descricao {
+        width: 560px;
+        height: 114px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    #produtos__similares {
+        min-width: 1800px;
+        background-color: var(--softgray);
+    }
 
     .contato__container {
         display: flex;
