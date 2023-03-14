@@ -112,6 +112,16 @@ body {
     background-color: var(--softgray);
 }
 
+.detalhamento__produto-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 328px;
+    height: 189px;
+}
+
 .detalhamento__produto-info--h2 {
     width: 328px;
     height: 26px;
@@ -144,6 +154,10 @@ body {
     line-height: 16px;
     color: var(--darkgray);
     text-align: justify;
+}
+
+.detalhamento__produto-info-img {
+    display: none;
 }
 
 #produtos__similares {
@@ -594,6 +608,45 @@ body {
         outline: none;
         caret-color: var(--mediumblue);
     } 
+
+    .produto__banner {
+        display: none;
+    }
+
+    .detalhamento__produto-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 32px;
+        gap: 0;
+        min-width: 768px;
+        max-width: 993px;
+        height: 221px;
+    }
+
+    .detalhamento__produto-infos {
+        width: 434px;
+        height: 157px;
+        margin: 0 auto;
+        gap: 8px;
+    }
+
+    .detalhamento__produto-info-img {
+        display: block;
+        width: 254px;
+        height: 177px;
+        margin: 0 auto;
+    }
+
+    .detalhamento__produto-info--h2 {
+        width: 434px;
+        height: 26px;
+    }
+
+    .detalhamento__produto-info--descricao {
+        width: 400px;
+        height: 96px;
+    }
 
     .contato__container {
         display: flex;
