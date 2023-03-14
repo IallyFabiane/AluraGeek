@@ -170,7 +170,7 @@ body {
     display: grid;
     grid-template-areas: 
     "produtos__similares-h2 produtos__similares-h2"
-    "produtos__caneca produtos__darth-vader"
+    "produtos__joystick produtos__darth-vader"
     "produtos__descricao1 produtos__descricao2"
     "produtos__yoda produtos__stormtroper"
     "produtos__descricao3 produtos__descricao4"
@@ -258,8 +258,8 @@ body {
     text-align: left;
 }
 
-.produtos__caneca {
-    grid-area: produtos__caneca;
+.produtos__joystick {
+    grid-area: produtos__joystick;
 }
 
 .produtos__darth-vader {
@@ -668,7 +668,7 @@ body {
         display: grid;
         grid-template-areas: 
         "produtos__similares-h2 produtos__similares-h2 produtos__similares-h2 produtos__similares-h2"
-        "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper"
+        "produtos__joystick produtos__darth-vader produtos__yoda produtos__stormtroper"
         "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
         ;
         grid-template-columns: repeat(4, 175px);
@@ -695,20 +695,6 @@ body {
         width: 102px;
         height: 26px;
         padding-left: 4px;
-    }
-
-    .produtos__p-container {
-        gap: 4px;
-        width: 98px;
-        height: 24px;
-        margin-left: 65%;
-    }
-
-    .produtos__p {
-        width: 66px;
-        height: 19px;
-        font-size: 16px;
-        line-height: 19px;
     }
 
     .produtos__img {
@@ -916,13 +902,13 @@ body {
     } 
 
     .detalhamento__produto-info {
-        min-width: 1800px;
+        min-width: 1600px;
         height: 403px;
         background-color: var(--softgray);
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 150px;
+        padding: 50px 150px;
         gap: 32px;
     }
 
@@ -973,12 +959,116 @@ body {
         background-color: var(--softgray);
     }
 
+    .produtos__similares {
+        display: grid;
+        grid-template-areas: 
+        "produtos__similares-h2 produtos__similares-h2 produtos__similares-h2 produtos__similares-h2 produtos__similares-h2 produtos__similares-h2"
+        "produtos__joystick produtos__darth-vader produtos__yoda produtos__stormtroper produtos__baby-yoda produtos__lord-sith"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+        ;
+        grid-template-columns: repeat(6, 180px);
+        grid-template-rows: 80px 230px 120px;
+        gap: 16px;
+        width: 1136px;
+        height: 500px;
+        place-content: start;
+        padding-left: 150px;
+    }
+
+    .produtos__similares-h2 {
+        grid-area: produtos__similares-h2;
+        width: 284px;
+        height: 38px;
+        font-size: 32px;
+        line-height: 38px;
+        justify-self: left;
+    }
+
+    .produtos__p {
+        width: 66px;
+        height: 19px;
+    }
+
+    .produtos__img,
+    .produtos__img--desktop {
+        width: 176px;
+        height: 174px;
+        
+    }
+
+    .produtos__descricao,
+    .produtos__descricao--desktop {
+        padding: 0px;
+        gap: 8px;
+        width: 176px;
+        height: 174px;
+    }
+
+    .produtos__img--desktop {
+        display: block;
+    }
+
+    .produtos__descricao--desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    .produtos__joystick {
+        grid-area: produtos__joystick;
+    }
+
+    .produtos__darth-vader {
+        grid-area: produtos__darth-vader;
+    }
+
+    .produtos__yoda {
+        grid-area: produtos__yoda;
+    }
+
+    .produtos__stormtroper {
+        grid-area: produtos__stormtroper;
+    }
+
+    .produtos__baby-yoda {
+        grid-area: produtos__baby-yoda;
+    }
+
+    .produtos__lord-sith {
+        grid-area: produtos__lord-sith;
+    }
+
+    .produtos__descricao1 {
+        grid-area: produtos__descricao1;
+    }
+
+    .produtos__descricao2 {
+        grid-area: produtos__descricao2;
+    }
+
+    .produtos__descricao3 {
+        grid-area: produtos__descricao3;
+    }
+
+    .produtos__descricao4 {
+        grid-area: produtos__descricao4;
+    }
+
+    .produtos__descricao5 {
+        grid-area: produtos__descricao5;
+    }
+
+    .produtos__descricao6 {
+        grid-area: produtos__descricao6;
+    }
+
     .contato__container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        min-width: 1600px;
+        min-width: 1950px;
         height: 470px;
     }
     
@@ -988,7 +1078,8 @@ body {
         justify-content: center;
         align-items: center;
         padding: 64px;
-        margin: 0 auto;
+        margin: 0 60px;
+        margin-right: 0;
         gap: 10px;
         width: 1200px;
         height: 368px;
@@ -1030,6 +1121,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
+        padding-left: 10px;
         gap: 8px;
         width: 560px;
         height: 240px;
@@ -1086,7 +1178,7 @@ body {
     }
     
     .footer {
-        min-width: 1440px;
+        min-width: 1600px;
         height: 102px;
     }
     
