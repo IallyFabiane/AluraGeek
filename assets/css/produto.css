@@ -237,11 +237,28 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: var(--darkblue);
 }
 
 .produtos__descricao-p > a {
     text-decoration: none;
+    color: var(--darkblue);
+}
+
+.produtos__descricao-p > a:visited {
+    color: var(--mediumgray);
+}
+
+.produtos__descricao-p > a:hover {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
 }
 
 .produtos__similares-h2 {
@@ -967,7 +984,7 @@ body {
         "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
         ;
         grid-template-columns: repeat(6, 180px);
-        grid-template-rows: 80px 230px 120px;
+        grid-template-rows: 80px 180px 120px;
         gap: 16px;
         width: 1136px;
         height: 500px;

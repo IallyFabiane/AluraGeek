@@ -73,6 +73,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+    transition: all 300ms ease-in-out;
 }
 
 .menu__button > a {
@@ -171,12 +172,22 @@ body {
     background-color: var(--darkblue);
     color: var(--white);
     border: none;
+    transition: all 300ms ease-in-out;
+}
+
+.promocional__button > a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .promocional__button:hover {
     background-color: var(--white);
-    color: var(--mediumblue);
     border: 1px solid var(--mediumblue);
+}
+
+.promocional__button > a:hover{
+    color: var(--mediumblue);
+    text-decoration: none;
 }
 
 #produtos__star-wars {
@@ -254,12 +265,28 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: var(--darkblue);
 }
-
 
 .produtos__descricao-p > a {
     text-decoration: none;
+    color: var(--darkblue);
+}
+
+.produtos__descricao-p > a:visited {
+    color: var(--mediumgray);
+}
+
+.produtos__descricao-p > a:hover {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
 }
 
 .produtos__titulo {
