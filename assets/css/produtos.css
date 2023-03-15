@@ -739,6 +739,125 @@ body {
         caret-color: var(--mediumblue);
     } 
 
+    #todos__produtos {
+        min-width: 768px;
+        max-width: 993px;
+        background-color: var(--softgray);
+    }
+    
+    .todos__produtos {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__button produtos__button"
+        "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4"
+        "produtos__baby-yoda produtos__lord-sith produtos__joystick produtos__playstation"
+        "produtos__descricao5 produtos__descricao6 produtos__descricao7 produtos__descricao8"
+        "produtos__nintendo produtos__nintendo-switch produtos__xbox-x produtos__game-boy"
+        "produtos__descricao9 produtos__descricao10 produtos__descricao11 produtos__descricao12"
+        "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio"
+        "produtos__descricao13 produtos__descricao14 produtos__descricao15 produtos__descricao16"
+        "produtos__oculos produtos__pikachu produtos__novo-item produtos__novo-item"
+        "produtos__descricao17 produtos__descricao18 produtos__novo-item produtos__novo-item"
+        ;
+        grid-template-columns: repeat(4, 180px);
+        grid-template-rows: 50px repeat(5, 190px 100px);
+        margin: 0 auto;
+        column-gap: 0;
+        row-gap: 10px;
+        min-width: 768px;
+        max-width: 993px;
+        padding: 10px;
+        place-content: center;
+        height: 1620px;
+    }
+    
+    .produtos__icone-editar1{
+        position: absolute;
+        left: 15%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir1 {
+        position: absolute;
+        left: 22%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-editar2{
+        position: absolute;
+        left: 38%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir2 {
+        position: absolute;
+        left: 45%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar3{
+        position: absolute;
+        left: 62%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir3 {
+        position: absolute;
+        left: 69%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar4{
+        position: absolute;
+        left: 86%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir4 {
+        position: absolute;
+        left: 92%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__img {
+        width: 164px;
+        height: 174px;
+        position: relative;
+    }
+
+    .produtos__descricao-h3 {
+        width: 164px;
+        height: 16px;
+    }
+
+    .produtos__descricao-h4 {
+        width: 164px;
+        height: 19px;
+    }
+
+    .produtos__id {
+        width: 164px;
+        height: 16px;
+    }
+
+    .produtos__button {
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+   .produtos__novo-item {
+        grid-area: produtos__novo-item;
+   }
+        
     .contato__container {
         display: flex;
         flex-direction: row;
