@@ -785,8 +785,22 @@ body {
         margin: 10px 0px;
         transition: all 300ms ease-in-out;
     }
+
+    .produtos__icone-editar1--tablet{
+        position: absolute;
+        left: 15%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
     
-    .produtos__icone-editar2{
+    .produtos__icone-excluir1--tablet {
+        position: absolute;
+        left: 22%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-editar2 {
         position: absolute;
         left: 38%;
         margin: 10px 0px;
@@ -800,7 +814,21 @@ body {
         transition: all 300ms ease-in-out;
     }
 
-    .produtos__icone-editar3{
+    .produtos__icone-editar2--tablet {
+        position: absolute;
+        left: 2%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-excluir2--tablet {
+        position: absolute;
+        left: 0%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar3 {
         position: absolute;
         left: 62%;
         margin: 10px 0px;
@@ -814,7 +842,21 @@ body {
         transition: all 300ms ease-in-out;
     }
 
-    .produtos__icone-editar4{
+    .produtos__icone-editar3--tablet {
+        position: absolute;
+        left: 62%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-excluir3--tablet {
+        position: absolute;
+        left: 69%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar4 {
         position: absolute;
         left: 86%;
         margin: 10px 0px;
@@ -824,6 +866,62 @@ body {
     .produtos__icone-excluir4 {
         position: absolute;
         left: 92%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar4--tablet {
+        position: absolute;
+        left: 85%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-excluir4--tablet {
+        position: absolute;
+        left: 92%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-editar5 {
+        position: absolute;
+        left: 62%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir5 {
+        position: absolute;
+        left: 69%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar5--tablet {
+        position: absolute;
+        left: 38%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir5--tablet {
+        position: absolute;
+        left: 45%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar6 {
+        position: absolute;
+        left: 38%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir6 {
+        position: absolute;
+        left: 45%;
         margin: 10px 0px;
         transition: all 300ms ease-in-out;
     }
