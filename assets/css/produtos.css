@@ -1048,12 +1048,156 @@ body {
         caret-color: var(--mediumblue);
     } 
 
+    #todos__produtos {
+        min-width: 1600px;
+        background-color: var(--softgray);
+    }
+    
+    .todos__produtos {
+        display: grid;
+        grid-template-areas: 
+        "produtos__titulo produtos__titulo produtos__titulo produtos__button produtos__button produtos__button"
+        "produtos__caneca produtos__darth-vader produtos__yoda produtos__stormtroper produtos__baby-yoda produtos__lord-sith"
+        "produtos__descricao1 produtos__descricao2 produtos__descricao3 produtos__descricao4 produtos__descricao5 produtos__descricao6"
+        "produtos__joystick produtos__playstation produtos__nintendo produtos__nintendo-switch produtos__xbox-x produtos__game-boy"
+        "produtos__descricao7 produtos__descricao8 produtos__descricao9 produtos__descricao10 produtos__descricao11 produtos__descricao12"
+        "produtos__atari produtos__snes produtos__sonic produtos__radio-relogio produtos__oculos produtos__pikachu"
+        "produtos__descricao13 produtos__descricao14 produtos__descricao15 produtos__descricao16 produtos__descricao17 produtos__descricao18"
+        ;
+        grid-template-columns: repeat(6, 190px);
+        grid-template-rows: 60px repeat(3, 190px 100px);
+        padding: 32px 150px;
+        padding-top: 50px;
+        column-gap: 0;
+        row-gap: 10px;
+        width: 1136px;
+        place-content: start;
+        height: 1000px;
+    }
+    
+    .produtos__icone-editar1{
+        position: absolute;
+        left: 18%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir1 {
+        position: absolute;
+        left: 22%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-editar2{
+        position: absolute;
+        left: 32%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir2 {
+        position: absolute;
+        left: 36%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar3{
+        position: absolute;
+        left: 46%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir3 {
+        position: absolute;
+        left: 50%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar4 {
+        position: absolute;
+        left: 60%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir4 {
+        position: absolute;
+        left: 64%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar5 {
+        position: absolute;
+        left: 74%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir5 {
+        position: absolute;
+        left: 78%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__icone-editar6 {
+        position: absolute;
+        left: 88%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .produtos__icone-excluir6 {
+        position: absolute;
+        left: 92%;
+        margin: 10px 0px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .produtos__img {
+        width: 176px;
+        height: 174px;
+        position: relative;
+    }
+
+    .produtos__titulo {
+        width: 281px;
+        height: 38px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .produtos__descricao-h3 {
+        width: 176px;
+        height: 16px;
+    }
+
+    .produtos__descricao-h4 {
+        width: 176px;
+        height: 19px;
+    }
+
+    .produtos__id {
+        width: 176px;
+        height: 16px;
+    }
+
+    .produtos__button {
+        justify-self: end;
+        margin-right: 18px;
+    }
+
     .contato__container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        min-width: 1600px;
+        min-width: 1900px;
         height: 470px;
     }
     
@@ -1063,7 +1207,7 @@ body {
         justify-content: center;
         align-items: center;
         padding: 64px;
-        margin: 0 auto;
+        margin: 0 80px;
         gap: 10px;
         width: 1200px;
         height: 368px;
