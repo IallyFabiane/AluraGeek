@@ -132,30 +132,30 @@ body {
     height: 3000px;
 }
 
-.produtos__icone-editar1{
+.produtos__icone-editar1--mobile {
+    position: absolute;
+    left: 25%;
+    margin: 10px 0px;
+    transition: all 300ms ease-in-out;
+}
+
+.produtos__icone-excluir1--mobile {
     position: absolute;
     left: 40%;
     margin: 10px 0px;
     transition: all 300ms ease-in-out;
 }
 
-.produtos__icone-excluir1 {
+.produtos__icone-editar2--mobile {
     position: absolute;
-    left: 30%;
+    left: 65%;
     margin: 10px 0px;
     transition: all 300ms ease-in-out;
 }
 
-.produtos__icone-editar2{
+.produtos__icone-excluir2--mobile {
     position: absolute;
     left: 80%;
-    margin: 10px 0px;
-    transition: all 300ms ease-in-out;
-}
-
-.produtos__icone-excluir2 {
-    position: absolute;
-    left: 70%;
     margin: 10px 0px;
     transition: all 300ms ease-in-out;
 }
