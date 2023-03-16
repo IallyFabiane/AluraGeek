@@ -26,7 +26,7 @@ body {
     align-items: center;
     padding: 8px;
     margin: 0;
-    gap: 30px;
+    gap: 23px;
     width: 360px;
     height: 72px;
     background-color: var(--white);
@@ -109,6 +109,161 @@ body {
 
 .menu__search-input:focus-within::placeholder {
     color: var(--darkblue);
+}
+
+.adicionar__produtos {
+    background-color: var(--softgray);
+    min-width: 360px;
+    max-width: 410px;
+    height: 511px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.adicionar__produtos-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 328px;
+    height: 479px;
+}
+
+.adicionar__produtos-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 340px;
+    height: 254px;
+}
+
+.adicionar__produtos-titulo {
+    width: 328px;
+    height: 26px;
+    color: var(--darkgray);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.adicionar__produtos-input__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 56px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.adicionar__produtos-input__container--textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 82px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.adicionar__produtos-elementos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 41px;
+    padding: 6px 12px;
+}
+
+.adicionar__produtos-textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 328px;
+    height: 40px;
+}
+
+.adicionar__produtos-label {
+    width: 304px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--mediumgray);
+}
+
+.adicionar__produtos-input,
+.adicionar__produtos-input--textarea {
+    width: 150px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    caret-color: var(--darkblue);
+    color: var(--darkgray);
+}
+
+.adicionar__produtos-input--textarea {
+    width: 328px;
+    height: 82px;
+    padding: 6px 12px;
+}
+
+.adicionar__produtos-elementos--textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 82px;
+}
+
+.adicionar__produtos-input:focus,
+.adicionar__produtos-input--textarea:focus {
+    outline: none;
+}
+
+.adicionar__produtos-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 328px;
+    height: 51px;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.adicionar__produtos-button:hover {
+    background-color: var(--softblue);
+    color: var(--darkblue);
+    border: 1px solid var(--darkblue);
 }
 
 .contato__container {
