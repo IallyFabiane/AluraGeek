@@ -1,12 +1,8 @@
 let input = document.querySelector('.menu__search-input');
-let buttonLogin = document.querySelector('.menu__button');
 let menuSearch = document.querySelector('.menu__search');
 
 input.addEventListener('focus', (event) => {
    event.target.style.borderBottom = "1px solid #5595E9";
-   if(window.innerWidth < 768) { 
-    input.style.borderBottom = 'none';
-   }
 });
 
 input.addEventListener('blur', (event) => {
@@ -35,7 +31,6 @@ function mostraBarraDePesquisa() {
     if(window.innerWidth < 768) {
         input.style.display = 'flex';
         menuSearch.style.display = 'flex';
-        buttonLogin.style.display = 'none';
         searchIcon.style.marginTop = '6px';
         searchIcon.style.marginLeft = '6px';
         input.classList.add('menu__search-input--mobile');
@@ -45,7 +40,6 @@ function mostraBarraDePesquisa() {
 function ocultaBarraDePesquisa() {
     if(window.innerWidth < 768) {
         input.style.display = 'none';
-        buttonLogin.style.display = 'block';
         input.classList.remove('menu__search-input--mobile');
     }
 }
@@ -74,11 +68,10 @@ campo1.addEventListener('blur', () => {
     campo1.style.borderBottom = "none";
 });
 
-
 campo2.addEventListener('focus', (event) => {
     event.target.closest('.contato__elementos--textarea').style.padding = "0px 6px";
     campo2.style.borderBottom = "2px solid #5595E9";
-    console.log(event.target)
+    console.log(event.target);
 });
 
 campo2.addEventListener('blur', (event) => {
@@ -90,3 +83,5 @@ const contatoForm = document.querySelector('.contato__form');
 contatoForm.addEventListener('submit', (event) => {
     event.preventDefault();
 })
+
+

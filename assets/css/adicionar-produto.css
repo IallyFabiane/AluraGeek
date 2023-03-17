@@ -615,6 +615,10 @@ body {
         height: 20px;
     }
 
+    .adicionar__produtos-fields {
+        gap: 20px;
+    }
+
     .adicionar__produtos-titulo {
         width: 675px;
         margin-left: 12px;
@@ -826,7 +830,48 @@ body {
         order: 2;
         width: 182px;
         height: 51px;
-        margin-left: 20%;
+        margin-left: 25%;
+    }
+
+    .adicionar__produtos {
+        min-width: 1600px;
+        height: 650px;
+    }
+
+    .adicionar__produtos-form {
+        width: 1136px;
+        height: 500px;  
+        padding: 20px;
+        padding-top: 32px;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .adicionar__produtos-fields {
+        gap: 32px;
+    }
+
+    .adicionar__produtos-titulo {
+        width: 559px;
+        height: 38px;
+    }
+
+    .adicionar__produtos-input__container,
+    .adicionar__produtos-elementos,
+    .adicionar__produtos-textos {
+        width: 559px;
+        height: 56px;
+    }
+
+    .adicionar__produtos-input__container--textarea,
+    .adicionar__produtos-input--textarea,
+    .adicionar__produtos-elementos--textarea {
+        width: 559px;
+    }
+
+    .adicionar__produtos-button {
+        width: 559px;
+        height: 51px;
     }
 
     .contato__container {
@@ -834,7 +879,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        min-width: 1600px;
+        min-width: 1632px;
         height: 470px;
     }
     
@@ -843,9 +888,10 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 60px;
-        margin: 0 100px;
-        gap: 0px;
+        padding: 64px;
+        margin: 0;
+        margin-left: 75px;
+        gap: 10px;
         width: 1200px;
         height: 368px;
     }
