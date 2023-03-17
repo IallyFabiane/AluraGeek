@@ -226,6 +226,7 @@ body {
     width: 328px;
     height: 82px;
     padding: 6px 12px;
+    border-radius: 4px;
 }
 
 .adicionar__produtos-elementos--textarea {
@@ -234,6 +235,7 @@ body {
     align-items: center;
     width: 328px;
     height: 82px;
+    border-radius: 4px;
 }
 
 .adicionar__produtos-input:focus,
@@ -579,6 +581,54 @@ body {
 
     .menu__search-icon {
         order: 1;
+    }
+
+    .adicionar__produtos {
+        min-width: 768px;
+        max-width: 993px;
+        height: 500px;
+        padding: 32px 8px;
+    }
+    
+    .adicionar__produtos-form {
+        width: 704px;
+        height: 479px;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .adicionar__produtos-input__container,
+    .adicionar__produtos-elementos,
+    .adicionar__produtos-textos {
+        width: 675px;
+        height: 56px;
+    }
+
+    .adicionar__produtos-label {
+        width: 675px;
+        height: 16px;
+    }
+
+    .adicionar__produtos-input {
+        width: 600px;
+        height: 20px;
+    }
+
+    .adicionar__produtos-titulo {
+        width: 675px;
+        margin-left: 12px;
+    }
+
+    .adicionar__produtos-input__container--textarea,
+    .adicionar__produtos-elementos--textarea,
+    .adicionar__produtos-input--textarea {
+        width: 675px;
+    }
+
+    .adicionar__produtos-button {
+        width: 675px;
+        height: 51px;
     }
 
     .contato__container {
