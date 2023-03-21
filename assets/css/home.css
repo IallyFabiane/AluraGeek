@@ -18,7 +18,7 @@ body {
     min-width: 360px;
     max-width: 410px;
 }
-
+  
 .menu {
     display: flex;
     flex-direction: row;
@@ -190,6 +190,18 @@ body {
     text-decoration: none;
 }
 
+.produtos__baby-yoda,
+.produtos__lord-sith,
+.produtos__xbox-x,
+.produtos__game-boy,
+.produtos__oculos,
+.produtos__pikachu,
+.produtos__descricao5,
+.produtos__descricao6 {
+    display: none;
+    visibility: hidden;
+}
+
 #produtos__star-wars {
     background-color: var(--softgray);
 }
@@ -204,25 +216,62 @@ body {
     "produtos__descricao3 produtos__descricao4"
     ;
     grid-template-columns: repeat(2, 170px);
-    grid-template-rows: 40px 190px 86px 190px 86px;
-    padding: 16px 5px;
+    grid-template-rows: 40px repeat(2, 270px 1px);
+    padding: 20px 5px;
     margin: 0 auto;
     column-gap: 0;
     row-gap: 10px;
     min-width: 360px;
     max-width: 410px;
     place-content: center;
-    height: 650px;
+    height: 600px;
 }
 
+.produtos__caneca {
+    grid-area: produtos__caneca;
+}
+
+.produtos__darth-vader {
+    grid-area: produtos__darth-vader;
+}
+
+.produtos__yoda {
+    grid-area: produtos__yoda;
+}
+
+.produtos__stormtroper {
+    grid-area: produtos__stormtroper;
+}
+
+.produtos__descricao1 {
+    grid-area: produtos__descricao1;
+}
+
+.produtos__descricao2 {
+    grid-area: produtos__descricao2;
+}
+
+.produtos__descricao3 {
+    grid-area: produtos__descricao3;
+}
+
+.produtos__descricao4 {
+    grid-area: produtos__descricao4;
+}
+  
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 156px;
+    height: 249px;
+}
+  
 .produtos__img {
     width: 160px;
     height: 174px;
-}
-
-.produtos__img--desktop,
-.produtos__descricao--desktop {
-    display: none;
 }
 
 .produtos__descricao {
@@ -232,7 +281,7 @@ body {
     padding: 0px;
     gap: 8px;
     width: 156px;
-    height: 249px;
+    height: 70px;
 }
 
 .produtos__descricao-h3 {
@@ -343,38 +392,6 @@ body {
     }
 }
 
-.produtos__caneca {
-    grid-area: produtos__caneca;
-}
-
-.produtos__darth-vader {
-    grid-area: produtos__darth-vader;
-}
-
-.produtos__yoda {
-    grid-area: produtos__yoda;
-}
-
-.produtos__stormtroper {
-    grid-area: produtos__stormtroper;
-}
-
-.produtos__descricao1 {
-    grid-area: produtos__descricao1;
-}
-
-.produtos__descricao2 {
-    grid-area: produtos__descricao2;
-}
-
-.produtos__descricao3 {
-    grid-area: produtos__descricao3;
-}
-
-.produtos__descricao4 {
-    grid-area: produtos__descricao4;
-}
-
 #produtos__consoles {
     background-color: var(--softgray);
 }
@@ -389,15 +406,15 @@ body {
     "produtos__descricao3 produtos__descricao4"
     ;
     grid-template-columns: repeat(2, 170px);
-    grid-template-rows: 40px 190px 86px 190px 86px;
-    padding: 16px 5px;
+    grid-template-rows: 40px  repeat(2, 270px 1px);
+    padding: 20px 5px;
     margin: 0 auto;
     column-gap: 0;
     row-gap: 10px;
     min-width: 360px;
     max-width: 410px;
     place-content: center;
-    height: 650px;
+    height: 580px;
 }
 
 .produtos__joystick  {
@@ -446,15 +463,15 @@ body {
     "produtos__descricao3 produtos__descricao4"
     ;
     grid-template-columns: repeat(2, 170px);
-    grid-template-rows: 40px 190px 86px 190px 86px;
-    padding: 16px 5px;
+    grid-template-rows: 40px  repeat(2, 270px 1px);
+    padding: 20px 5px;
     margin: 0 auto;
     column-gap: 0;
     row-gap: 10px;
     min-width: 360px;
     max-width: 410px;
     place-content: center;
-    height: 650px;
+    height: 580px;
 }
 
 .produtos__atari  {
@@ -839,6 +856,18 @@ body {
         height: 40px;
     }
 
+    .produtos__baby-yoda,
+    .produtos__lord-sith,
+    .produtos__xbox-x,
+    .produtos__game-boy,
+    .produtos__oculos,
+    .produtos__pikachu,
+    .produtos__descricao5,
+    .produtos__descricao6 {
+        display: none;
+        visibility: visible;
+    }
+
     .produtos__star-wars {
         display: grid;
         grid-template-areas: 
@@ -854,13 +883,9 @@ body {
         column-gap: 0;
         row-gap: 10px;
         min-width: 768px;
+        max-width: 1200px;
         height: 358px;
         place-content: center;
-    }
-
-    .produtos__img--desktop,
-    .produtos__descricao--desktop {
-        display: none;
     }
 
     .produtos__titulo {
@@ -914,6 +939,7 @@ body {
         column-gap: 0;
         row-gap: 10px;
         min-width: 768px;
+        max-width: 1200px;
         height: 358px;
         place-content: center;
     }
@@ -933,6 +959,7 @@ body {
         column-gap: 0;
         row-gap: 10px;
         min-width: 768px;
+        max-width: 1200px;
         height: 358px;
         place-content: center;
     }
@@ -1179,14 +1206,29 @@ body {
         min-width: 1600px;
     }
 
-    .produtos__img--desktop {
+    .produtos__star-wars--desktop {
         display: block;
     }
 
-    .produtos__descricao--desktop {
+    .produtos__baby-yoda,
+    .produtos__lord-sith,
+    .produtos__xbox-x,
+    .produtos__game-boy,
+    .produtos__oculos,
+    .produtos__pikachu {
+        display: block;
+        visibility: visible;
+    }
+
+    .produtos__descricao5,
+    .produtos__descricao6 {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 176px;
+        height: 174px;
+        visibility: visible;
     }
 
     #produtos__star-wars {
@@ -1219,7 +1261,7 @@ body {
         line-height: 38px;
         justify-self: left;
         align-self: end;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .produtos__p-container {
@@ -1228,7 +1270,7 @@ body {
         gap: 0;
         width: 98px;
         height: 24px;
-        margin-left: 500px;
+        margin-left: 540px;
         justify-self: right;
         align-self: end;
     }
@@ -1238,14 +1280,12 @@ body {
         height: 19px;
     }
 
-    .produtos__img,
-    .produtos__img--desktop {
+    .produtos__img {
         width: 176px;
         height: 174px;
     }
 
-    .produtos__descricao,
-    .produtos__descricao--desktop {
+    .produtos__descricao {
         padding: 0px;
         gap: 8px;
         width: 176px;

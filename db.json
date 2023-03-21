@@ -1,0 +1,202 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "imgURL": "assets/img/stormtroper-caneca.png",
+            "alt": "caneca stormtroper",
+            "nome": "Caneca Stormtroper",
+            "preco": "60,00",
+            "section": "produtos__star-wars",
+            "area": "produtos__caneca",
+            "numero": "produtos__descricao1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id": 2,
+            "imgURL": "assets/img/darth-vader.png",
+            "alt": "darth vader",
+            "nome": "Darth Vader",
+            "preco": "60,00",
+            "section": "produtos__star-wars",
+            "area": "produtos__darth-vader",
+            "numero": "produtos__descricao2",
+            "descricao": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 3,
+            "imgURL": "assets/img/yoda.png",
+            "alt": "yoda",
+            "nome": "Yoda",
+            "preco": "60,00",
+            "section": "produtos__star-wars",
+            "area": "produtos__yoda",
+            "numero": "produtos__descricao3",
+            "descricao": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "id": 4,
+            "imgURL": "assets/img/stormtroper.png",
+            "alt": "stormtroper",
+            "nome": "Stormtroper",
+            "preco": "60,00",
+            "section": "produtos__star-wars",
+            "area": "produtos__stormtroper",
+            "numero": "produtos__descricao4",
+            "descricao": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "id": 5,
+            "imgURL": "assets/img/baby-yoda.png",
+            "alt": "baby yoda",
+            "nome": "Baby Yoda",
+            "preco": "60,00",
+            "section": "produtos__star-wars",
+            "area": "produtos__baby-yoda",
+            "numero": "produtos__descricao5",
+            "descricao": "Varius morbi enim nunc faucibus a pellentesque sit amet."
+        },
+        {
+            "id": 6,
+            "imgURL": "assets/img/lord-sith.png",
+            "alt": "lord sith",
+            "nome": "Lord Sith",
+            "preco": "60,00",
+            "section": "produtos__star-wars",
+            "area": "produtos__lord-sith",
+            "numero": "produtos__descricao6",
+            "descricao": "Sit amet est placerat in egestas erat imperdiet. Risus feugiat in ante metus."
+        },
+        {
+            "id": 7,
+            "imgURL": "assets/img/joystick-xbox.png",
+            "alt": "joystick xbox",
+            "nome": "Joystick Xbox",
+            "preco": "60,00",
+            "section": "produtos__consoles",
+            "area": "produtos__joystick",
+            "numero": "produtos__descricao1",
+            "descricao": "Placerat in egestas erat imperdiet sed. Leo a diam sollicitudin tempor id."
+        },
+        {
+            "id": 8,
+            "imgURL": "assets/img/playstation5.png",
+            "alt": "playstation 5",
+            "nome": "PlayStation 5",
+            "preco": "60,00",
+            "section": "produtos__consoles",
+            "area": "produtos__playstation",
+            "numero": "produtos__descricao2",
+            "descricao": "Leo vel fringilla est ullamcorper eget nulla. Magna sit amet purus gravida."
+        },
+        {
+            "id": 9,
+            "imgURL": "assets/img/nintendo.png",
+            "alt": "nintendo",
+            "nome": "Nintendo",
+            "preco": "60,00",
+            "section": "produtos__consoles",
+            "area": "produtos__nintendo",
+            "numero": "produtos__descricao3",
+            "descricao": "Ut sem nulla pharetra diam sit amet nisl. Pharetra magna ac placerat vestibulum lectus mauris."
+        },
+        {
+            "id": 10,
+            "imgURL": "assets/img/joysticks-nintendo-switch.png",
+            "alt": "joysticks nintendo switch",
+            "nome": "Nintendo Switch",
+            "preco": "60,00",
+            "section": "produtos__consoles",
+            "area": "produtos__nintendo-switch",
+            "numero": "produtos__descricao4",
+            "descricao": "In iaculis nunc sed augue lacus viverra. Eu scelerisque felis imperdiet proin fermentum leo. "
+        },
+        {
+            "id": 11,
+            "imgURL": "assets/img/xbox-x.png",
+            "alt": "xbox x",
+            "nome": "Xbox X",
+            "preco": "60,00",
+            "section": "produtos__consoles",
+            "area": "produtos__xbox-x",
+            "numero": "produtos__descricao5",
+            "descricao": "At varius vel pharetra vel turpis nunc eget lorem dolor. Mauris cursus mattis molestie a."
+        },
+        {
+            "id": 12,
+            "imgURL": "assets/img/game-boy-nintendo.png",
+            "alt": "gameboy nintendo",
+            "nome": "Gameboy Nintendo",
+            "preco": "60,00",
+            "section": "produtos__consoles",
+            "area": "produtos__game-boy",
+            "numero": "produtos__descricao6",
+            "descricao": "Purus ut faucibus pulvinar elementum integer enim."
+        },
+        {
+            "id": 13,
+            "imgURL": "assets/img/camisa-atari.png",
+            "alt": "camisa atari",
+            "nome": "Camisa Atari",
+            "preco": "60,00",
+            "section": "produtos__diversos",
+            "area": "produtos__atari",
+            "numero": "produtos__descricao1",
+            "descricao": "Purus ut faucibus pulvinar elementum integer enim."
+        },
+        {
+            "id": 14,
+            "imgURL": "assets/img/camis-snes.png",
+            "alt": "camisa snes",
+            "nome": "Camisa Snes",
+            "preco": "60,00",
+            "section": "produtos__diversos",
+            "area": "produtos__snes",
+            "numero": "produtos__descricao2",
+            "descricao": "In ornare quam viverra orci sagittis. Consequat id porta nibh venenatis cras sed felis."
+        },
+        {
+            "id": 15,
+            "imgURL": "assets/img/sonic.png",
+            "alt": "sonic",
+            "nome": "Sonic",
+            "preco": "60,00",
+            "section": "produtos__diversos",
+            "area": "produtos__sonic",
+            "numero": "produtos__descricao3",
+            "descricao": "Bibendum enim facilisis gravida neque convallis a cras semper auctor."
+        },
+        {
+            "id": 16,
+            "imgURL": "assets/img/radio-relogio.png",
+            "alt": "rádio-relógio",
+            "nome": "Rádio-relógio",
+            "preco": "60,00",
+            "section": "produtos__diversos",
+            "area": "produtos__radio-relogio",
+            "numero": "produtos__descricao4",
+            "descricao": "Vitae tempus quam pellentesque nec nam aliquam sem et. Fames ac turpis egestas integer eget."
+        },
+        {
+            "id": 17,
+            "imgURL": "assets/img/oculos-realidade-virtual.png",
+            "alt": "óculos realidade virtual",
+            "nome": "Óculos",
+            "preco": "60,00",
+            "section": "produtos__diversos",
+            "area": "produtos__oculos",
+            "numero": "produtos__descricao5",
+            "descricao": "Duis ut diam quam nulla porttitor massa id neque aliquam."
+        },
+        {
+            "id": 18,
+            "imgURL": "assets/img/pikachu.png",
+            "alt": "pikachu",
+            "nome": "Pikachu",
+            "preco": "60,00",
+            "section": "produtos__diversos",
+            "area": "produtos__pikachu",
+            "numero": "produtos__descricao6",
+            "descricao": "Sagittis id consectetur purus ut faucibus."
+        }
+    ]
+}
