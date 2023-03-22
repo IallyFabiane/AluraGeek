@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Produto</title>
+    <title>Editar Produto</title>
     <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/adicionar-produto.css">
+    <link rel="stylesheet" href="assets/css/editar-produto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -24,51 +24,51 @@
         </nav>
     </header>
     <main>
-        <section class="adicionar__produtos">
-            <form class="adicionar__produtos-form">
+        <section class="editar__produtos">
+            <form class="editar__produtos-form">
                 <fieldset>
-                    <legend class="adicionar__produtos-titulo">Adicionar novo produto</legend>
+                    <legend class="editar__produtos-titulo">Editar produto</legend>
                 </fieldset>
-                <fieldset class="adicionar__produtos-fields">
-                    <div class="adicionar__produtos-input__container">
-                        <div class="adicionar__produtos-elementos">
-                            <div class="adicionar__produtos-textos">
-                                <label for="url" class="adicionar__produtos-label">URL da imagem</label>
-                                <input required name="url" class="adicionar__produtos-input" type="text" placeholder="" value=""></input>
+                <fieldset class="editar__produtos-fields">
+                    <div class="editar__produtos-input__container">
+                        <div class="editar__produtos-elementos">
+                            <div class="editar__produtos-textos">
+                                <label for="url" class="editar__produtos-label">URL da imagem</label>
+                                <input required name="url" class="editar__produtos-input" type="text" placeholder="" value=""></input>
                             </div>
                         </div>
                     </div>
-                    <div class="adicionar__produtos-input__container">
-                        <div class="adicionar__produtos-elementos">
-                            <div class="adicionar__produtos-textos">
-                                <label for="categories" class="adicionar__produtos-label">Categorias</label>
-                                <input required name="categories" class="adicionar__produtos-input" type="text" placeholder="Consoles" value=""></input>
+                    <div class="editar__produtos-input__container">
+                        <div class="editar__produtos-elementos">
+                            <div class="editar__produtos-textos">
+                                <label for="categories" class="editar__produtos-label">Categorias</label>
+                                <input required name="categories" class="editar__produtos-input" type="text" placeholder="Consoles" value=""></input>
                             </div>
                         </div>
                     </div>
-                    <div class="adicionar__produtos-input__container">
-                        <div class="adicionar__produtos-elementos">
-                            <div class="adicionar__produtos-textos">
-                                <label for="name" class="adicionar__produtos-label">Nome do Produto</label>
-                                <input required name="name" class="adicionar__produtos-input" type="text" placeholder="Produto XYZ" value=""></input>
+                    <div class="editar__produtos-input__container">
+                        <div class="editar__produtos-elementos">
+                            <div class="editar__produtos-textos">
+                                <label for="name" class="editar__produtos-label">Nome do Produto</label>
+                                <input required name="name" class="editar__produtos-input" type="text" placeholder="Produto XYZ" value=""></input>
                             </div>
                         </div>
                     </div>
-                    <div class="adicionar__produtos-input__container">
-                        <div class="adicionar__produtos-elementos">
-                            <div class="adicionar__produtos-textos">
-                                <label for="price" class="adicionar__produtos-label">Preço do Produto</label>
-                                <input required name="price" class="adicionar__produtos-input" type="number" placeholder="R$ 60.00" value=""></input>
+                    <div class="editar__produtos-input__container">
+                        <div class="editar__produtos-elementos">
+                            <div class="editar__produtos-textos">
+                                <label for="price" class="editar__produtos-label">Preço do Produto</label>
+                                <input required name="price" class="editar__produtos-input" type="number" placeholder="R$ 60.00" value=""></input>
                             </div>
                         </div>
                     </div>
-                    <div class="adicionar__produtos-input__container--textarea">
-                        <div class="adicionar__produtos-elementos--textarea">
-                            <textarea required name="message" class="adicionar__produtos-input--textarea" placeholder="Descrição do Produto" rows="5" cols="30" wrap="hard"></textarea>
+                    <div class="editar__produtos-input__container--textarea">
+                        <div class="editar__produtos-elementos--textarea">
+                            <textarea required name="message" class="editar__produtos-input--textarea" placeholder="Descrição do Produto" rows="5" cols="30" wrap="hard"></textarea>
                         </div>
                     </div>
-                    <button class="adicionar__produtos-button" type="submit">
-                        Adicionar Produto
+                    <button class="editar__produtos-button" type="submit">
+                        Editar Produto
                     </button>
                 </fieldset>
             </form>
@@ -118,7 +118,6 @@
          </footer>
     </main>
     <script src="js/adicionar-produto.js"></script>
-    <script type="module" src="controllers/cria_adiciona-produto.js"></script>
-    <script type="module" src="services/produtos-services.js"></script>
+    <script type="module" src="controllers/atualiza-produto.js"></script>
 </body>
 </html>

@@ -197,14 +197,6 @@
       "area": "produtos__pikachu",
       "numero": "produtos__descricao6",
       "descricao": "Sagittis id consectetur purus ut faucibus."
-    },
-    {
-      "id": 19,
-      "imgURL": "assets/img/camis-snes.png",
-      "section": "diversos",
-      "nome": "camisa snes",
-      "preco": "60.00",
-      "descricao": "camisa snes"
     }
   ]
 }

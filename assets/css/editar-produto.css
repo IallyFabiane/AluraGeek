@@ -111,7 +111,7 @@ body {
     color: var(--darkblue);
 }
 
-.adicionar__produtos {
+.editar__produtos {
     background-color: var(--softgray);
     min-width: 360px;
     max-width: 410px;
@@ -123,7 +123,7 @@ body {
     gap: 16px;
 }
 
-.adicionar__produtos-form {
+.editar__produtos-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +133,7 @@ body {
     height: 479px;
 }
 
-.adicionar__produtos-fields {
+.editar__produtos-fields {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -143,7 +143,7 @@ body {
     height: 254px;
 }
 
-.adicionar__produtos-titulo {
+.editar__produtos-titulo {
     width: 328px;
     height: 26px;
     color: var(--darkgray);
@@ -154,7 +154,7 @@ body {
     line-height: 26px;
 }
 
-.adicionar__produtos-input__container {
+.editar__produtos-input__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -166,7 +166,7 @@ body {
     border-radius: 4px;
 }
 
-.adicionar__produtos-input__container--textarea {
+.editar__produtos-input__container--textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -178,7 +178,7 @@ body {
     border-radius: 4px;
 }
 
-.adicionar__produtos-elementos {
+.editar__produtos-elementos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -187,7 +187,7 @@ body {
     padding: 6px 12px;
 }
 
-.adicionar__produtos-textos {
+.editar__produtos-textos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -197,7 +197,7 @@ body {
     height: 40px;
 }
 
-.adicionar__produtos-label {
+.editar__produtos-label {
     width: 304px;
     height: 16px;
     font-family: 'Raleway';
@@ -208,8 +208,8 @@ body {
     color: var(--mediumgray);
 }
 
-.adicionar__produtos-input,
-.adicionar__produtos-input--textarea {
+.editar__produtos-input,
+.editar__produtos-input--textarea {
     width: 150px;
     height: 20px;
     font-family: 'Raleway';
@@ -222,14 +222,14 @@ body {
     color: var(--darkgray);
 }
 
-.adicionar__produtos-input--textarea {
+.editar__produtos-input--textarea {
     width: 328px;
     height: 82px;
     padding: 6px 12px;
     border-radius: 4px;
 }
 
-.adicionar__produtos-elementos--textarea {
+.editar__produtos-elementos--textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -238,12 +238,12 @@ body {
     border-radius: 4px;
 }
 
-.adicionar__produtos-input:focus,
-.adicionar__produtos-input--textarea:focus {
+.editar__produtos-input:focus,
+.editar__produtos-input--textarea:focus {
     outline: none;
 }
 
-.adicionar__produtos-button {
+.editar__produtos-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -263,7 +263,7 @@ body {
     transition: all 300ms ease-in-out;
 }
 
-.adicionar__produtos-button:hover {
+.editar__produtos-button:hover {
     background-color: var(--darkgray);
 }
 
@@ -582,14 +582,14 @@ body {
         order: 1;
     }
 
-    .adicionar__produtos {
+    .editar__produtos {
         min-width: 768px;
         max-width: 993px;
         height: 500px;
         padding: 32px 8px;
     }
     
-    .adicionar__produtos-form {
+    .editar__produtos-form {
         width: 704px;
         height: 479px;
         padding: 0;
@@ -597,39 +597,39 @@ body {
         gap: 20px;
     }
 
-    .adicionar__produtos-input__container,
-    .adicionar__produtos-elementos,
-    .adicionar__produtos-textos {
+    .editar__produtos-input__container,
+    .editar__produtos-elementos,
+    .editar__produtos-textos {
         width: 675px;
         height: 56px;
     }
 
-    .adicionar__produtos-label {
+    .editar__produtos-label {
         width: 675px;
         height: 16px;
     }
 
-    .adicionar__produtos-input {
+    .editar__produtos-input {
         width: 600px;
         height: 20px;
     }
 
-    .adicionar__produtos-fields {
+    .editar__produtos-fields {
         gap: 20px;
     }
 
-    .adicionar__produtos-titulo {
+    .editar__produtos-titulo {
         width: 675px;
         margin-left: 12px;
     }
 
-    .adicionar__produtos-input__container--textarea,
-    .adicionar__produtos-elementos--textarea,
-    .adicionar__produtos-input--textarea {
+    .editar__produtos-input__container--textarea,
+    .editar__produtos-elementos--textarea,
+    .editar__produtos-input--textarea {
         width: 675px;
     }
 
-    .adicionar__produtos-button {
+    .editar__produtos-button {
         width: 675px;
         height: 51px;
     }
@@ -832,12 +832,12 @@ body {
         margin-left: 25%;
     }
 
-    .adicionar__produtos {
+    .editar__produtos {
         min-width: 1600px;
         height: 650px;
     }
 
-    .adicionar__produtos-form {
+    .editar__produtos-form {
         width: 1136px;
         height: 500px;  
         padding: 20px;
@@ -846,29 +846,29 @@ body {
         margin: 0 auto;
     }
 
-    .adicionar__produtos-fields {
+    .editar__produtos-fields {
         gap: 32px;
     }
 
-    .adicionar__produtos-titulo {
+    .editar__produtos-titulo {
         width: 559px;
         height: 38px;
     }
 
-    .adicionar__produtos-input__container,
-    .adicionar__produtos-elementos,
-    .adicionar__produtos-textos {
+    .editar__produtos-input__container,
+    .editar__produtos-elementos,
+    .editar__produtos-textos {
         width: 559px;
         height: 56px;
     }
 
-    .adicionar__produtos-input__container--textarea,
-    .adicionar__produtos-input--textarea,
-    .adicionar__produtos-elementos--textarea {
+    .editar__produtos-input__container--textarea,
+    .editar__produtos-input--textarea,
+    .editar__produtos-elementos--textarea {
         width: 559px;
     }
 
-    .adicionar__produtos-button {
+    .editar__produtos-button {
         width: 559px;
         height: 51px;
     }

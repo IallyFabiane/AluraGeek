@@ -163,7 +163,29 @@ body {
 .produtos__icone-editar1:hover,
 .produtos__icone-editar2:hover,
 .produtos__icone-excluir1:hover,
-.produtos__icone-excluir2:hover {
+.produtos__icone-excluir2:hover,
+.produtos__icone-editar3:hover,
+.produtos__icone-editar4:hover,
+.produtos__icone-excluir3:hover,
+.produtos__icone-excluir4:hover,
+.produtos__icone-editar5:hover,
+.produtos__icone-editar6:hover,
+.produtos__icone-excluir5:hover,
+.produtos__icone-excluir6:hover,
+.produtos__icone-editar1--mobile:hover,
+.produtos__icone-editar2--mobile:hover,
+.produtos__icone-excluir1--mobile:hover,
+.produtos__icone-excluir2--mobile:hover,
+.produtos__icone-editar1--tablet:hover,
+.produtos__icone-editar2--tablet:hover,
+.produtos__icone-excluir1--tablet:hover,
+.produtos__icone-excluir2--tablet:hover, 
+.produtos__icone-editar3--tablet:hover,
+.produtos__icone-editar4--tablet:hover,
+.produtos__icone-excluir3--tablet:hover,
+.produtos__icone-excluir4--tablet:hover,
+.produtos__icone-editar5--tablet:hover,
+.produtos__icone-excluir5--tablet:hover {
     transform: scale(1.1);
 }
 
@@ -193,8 +215,8 @@ body {
 }
 
 .produtos__button:hover {
-    background-color: var(--white);
-    color: var(--darkblue);
+    background-color: var(--darkgray);
+    color: var(--white);
 }
 
 .produtos__button > a {

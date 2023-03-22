@@ -1,5 +1,5 @@
 import { listaProdutos } from "../services/produtos-services.js";
- 
+
 const novoProduto = (nome, id, imgURL, preco, alt, section, area, numero) => {
   const card = document.createElement('div');
   card.classList.add('produto');
@@ -112,3 +112,4 @@ form.addEventListener('submit', adicionarProduto);
 
 // Obtém a lista de produtos ao carregar a página
 window.addEventListener('DOMContentLoaded', obterListaProdutos);
+
