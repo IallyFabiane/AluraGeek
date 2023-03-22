@@ -58,7 +58,7 @@
                         <div class="adicionar__produtos-elementos">
                             <div class="adicionar__produtos-textos">
                                 <label for="price" class="adicionar__produtos-label">Preço do Produto</label>
-                                <input required name="price" class="adicionar__produtos-input" type="text" placeholder="R$ 60,00" value=""></input>
+                                <input required name="price" class="adicionar__produtos-input" type="number" placeholder="R$ 60.00" value=""></input>
                             </div>
                         </div>
                     </div>
@@ -118,5 +118,7 @@
          </footer>
     </main>
     <script src="js/adicionar-produto.js"></script>
+    <script type="module" src="controllers/produtos-controller.js"></script>
+    <script type="module" src="services/produtos-services.js"></script>
 </body>
 </html>
