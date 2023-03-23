@@ -1,0 +1,999 @@
+:root {
+    --darkblue:#2A7AE4;
+    --mediumblue: #5595E9;
+    --softblue: #D4E4FA;
+    --offwhite: #E5E5E5;
+    --softgray: #F5F5F5;
+    --blue: #EAF2FD;
+    --mediumgray: #A2A2A2;
+    --darkgray: #464646;
+    --white:#FFF;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 360px;
+    max-width: 410px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 0;
+    gap: 23px;
+    width: 360px;
+    height: 72px;
+    background-color: var(--white);
+}
+
+.menu__logo {
+    width: 100px;
+    height: 28px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu__search-input {
+   display: none;
+}
+
+.menu__search-input--mobile {
+    width: 159px;
+    height: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--softgray);
+    color: var(--mediumgray);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    caret-color: var(--mediumblue);
+}
+
+.menu__button {
+    box-sizing: border-box;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid var(--darkblue);
+    background-color: var(--white);
+    color: var(--darkblue);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__button > a {
+    color: var(--darkblue);
+    text-decoration: none;
+}
+
+.menu__button:hover {
+    background-color: var(--blue);  
+}
+
+.menu__search {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+::-webkit-input-placeholder {
+    color: var(--mediumgray);
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+    color: var(--mediumgray);  
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--mediumgray);  
+  }
+  
+  :-ms-input-placeholder {  
+    color: var(--mediumgray);  
+}
+
+.menu__search-input:focus-within::placeholder {
+    color: var(--darkblue);
+}
+
+.deletar__produtos {
+    background-color: var(--softgray);
+    min-width: 360px;
+    max-width: 410px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.deletar__produtos-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 328px;
+    height: 509px;
+}
+
+.deletar__produtos-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 340px;
+    height: 254px;
+}
+
+.deletar__produtos-titulo {
+    width: 328px;
+    height: 26px;
+    color: var(--darkgray);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.deletar__produtos-input__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 56px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.deletar__produtos-input__container--textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 82px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.deletar__produtos-elementos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 41px;
+    padding: 6px 12px;
+}
+
+.deletar__produtos-textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 328px;
+    height: 40px;
+}
+
+.deletar__produtos-label {
+    width: 304px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--mediumgray);
+}
+
+.deletar__produtos-input,
+.deletar__produtos-input--textarea {
+    width: 150px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    caret-color: var(--darkblue);
+    color: var(--darkgray);
+}
+
+.deletar__produtos-input--textarea {
+    width: 328px;
+    height: 82px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.deletar__produtos-elementos--textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 82px;
+    border-radius: 4px;
+}
+
+.deletar__produtos-input:focus,
+.deletar__produtos-input--textarea:focus {
+    outline: none;
+}
+
+.deletar__produtos-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 328px;
+    height: 51px;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--darkblue);
+    color: var(--white);
+    transition: all 300ms ease-in-out;
+}
+
+.deletar__produtos-button:hover {
+    background-color: var(--darkgray);
+}
+
+.contato__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-width: 360px;
+    max-width: 410px;
+    height: 600px;
+    background-color: var(--blue);
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 328px;
+    height: 650px;
+}
+
+.suporte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 8px;
+    width: 328px;
+    height: 260px;
+}
+
+.suporte__logo {
+    width: 176px;
+    height: 50px;
+}
+
+.suporte__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 328px;
+    height: 194px;
+}
+
+.suporte__item {
+    width: 328px;
+    height: 19px;
+    color: var(--darkgray);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.suporte__item:hover {
+    color: var(--mediumblue);
+    font-weight: bold;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 229px;
+}
+
+.contato__form-titulo {
+    width: 328px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--darkgray);
+}
+
+.contato__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 328px;
+    height: 254px;
+}
+
+.contato__input__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 56px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.contato__elementos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 304px;
+    height: 40px;
+    padding: 6px 12px;
+}
+
+.contato__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 324px;
+    height: 40px;
+}
+
+.contato__label {
+    width: 304px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--mediumgray);
+}
+
+.contato__input,
+.contato__input--textarea {
+    width: 98px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    caret-color: var(--darkblue);
+}
+
+.contato__input--textarea  {
+    width: 328px;
+    height: 82px;
+}
+
+.contato__input:focus,
+.contato__input--textarea:focus {
+    width: 324px;
+    outline: none;
+}
+
+.contato__input__container--textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 82px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.contato__elementos--textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 82px;
+}
+
+.contato__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--darkblue);
+    color: var(--white);
+    margin: 10px;
+}
+
+.contato__button:hover {
+    background-color: var(--softblue);
+    color: var(--darkblue);
+    border: 1px solid var(--darkblue);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 360px;
+    max-width: 410px;
+    height: 102px;
+    background-color: var(--white);
+}
+
+.footer__p {
+    width: 234px;
+    height: 38px;
+    margin: 0 auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--darkgray);
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__link > span {
+    font-weight: bold;
+    color: var(--darkblue);
+}
+
+.footer__link > span:hover {
+    font-weight: bold;
+    color: var(--mediumgray);
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        min-width: 768px;
+        max-width: 993px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        margin: 0 auto;
+        gap: 20px;
+        width: 768px;
+        height: 72px;
+    }
+
+    .menu__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        gap: 0;
+        width: 272px;
+        height: 40px;
+        background-color: var(--softgray);
+        border-radius: 20px;
+        order: 1;
+    }
+
+    .menu__search-input {
+        width: 159px;
+        height: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: var(--softgray);
+        color: var(--mediumgray);
+        border: none;
+    }
+
+    .menu__search-input:focus {
+        outline: none;
+        caret-color: var(--mediumblue);
+    }
+
+    .menu__button {
+        order: 2;
+        margin-left: 70px;
+        width: 166px;
+        height: 40px;
+    }
+
+    .menu__search-icon {
+        order: 1;
+    }
+
+    .deletar__produtos {
+        min-width: 768px;
+        max-width: 993px;
+        height: 500px;
+        padding: 32px 8px;
+    }
+    
+    .deletar__produtos-form {
+        width: 704px;
+        height: 479px;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .deletar__produtos-input__container,
+    .deletar__produtos-elementos,
+    .deletar__produtos-textos {
+        width: 675px;
+        height: 56px;
+    }
+
+    .deletar__produtos-label {
+        width: 675px;
+        height: 16px;
+    }
+
+    .deletar__produtos-input {
+        width: 600px;
+        height: 20px;
+    }
+
+    .deletar__produtos-fields {
+        gap: 20px;
+    }
+
+    .deletar__produtos-titulo {
+        width: 675px;
+        margin-left: 12px;
+    }
+
+    .deletar__produtos-input__container--textarea,
+    .deletar__produtos-elementos--textarea,
+    .deletar__produtos-input--textarea {
+        width: 675px;
+    }
+
+    .deletar__produtos-button {
+        width: 675px;
+        height: 51px;
+    }
+
+    .contato__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 28px;
+        gap: 115px;
+        min-width: 768px;
+        max-width: 993px;
+        height: 364px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+    }
+
+    .suporte {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+    }
+
+    .suporte__logo {
+        width: 176px;
+        height: 50px;
+    }
+
+    .suporte__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 0px;
+        gap: 24px;
+        width: 176px;
+        height: 234px;
+    }
+
+    .suporte__item {
+        width: 176px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+    }
+
+    .contato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 434px;
+        height: 229px;
+    }
+
+    .contato__form-titulo {
+        width: 434px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .contato__fields {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 434px;
+        height: 300px;
+    }
+
+    .contato__input__container{
+        width: 410px;
+        height: 56px;
+    }
+
+    .contato__input:focus {
+        width: 405px;
+    }
+
+    .contato__input__container--textarea,
+    .contato__input--textarea {
+        width: 410px;
+        height: 82px;
+    }
+
+    .contato__input--textarea:focus {
+        width: 405px;
+    }
+
+    .contato__elementos,
+    .contato__textos {
+        width: 410px;
+        height: 40px;
+    }
+
+    .contato__elementos--textarea {
+        width: 405px;
+        height: 82px;
+    }
+
+    .footer { 
+        min-width: 768px;
+        max-width: 993px;
+        height: 102px;
+    }
+
+    .footer__p {
+        width: 234px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+}
+
+@media (min-width: 994px) {
+
+    html, body {
+        overflow-x: visible;
+        min-width: 994px;
+    }
+
+    header {
+        min-width: 1440px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0px;
+        margin: 0 auto;
+        gap: 30px;
+        width: 1136px;
+        height: 115px;
+    }
+
+    .menu__logo {   
+        width: 176px;
+        height: 50px;
+        order: 0;
+        justify-self: flex-start;
+    }
+
+    .menu__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        gap: 0;
+        width: 393px;
+        height: 40px;
+        background-color: var(--softgray);
+        border-radius: 20px;
+        order: 1;
+    }
+
+    .menu__search-input {
+        width: 209px;
+        height: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: var(--softgray);
+        color: var(--mediumgray);
+        border: none;
+    }
+
+    .menu__search-input:focus {
+        outline: none;
+        caret-color: var(--mediumblue);
+    } 
+
+    .menu__button {
+        order: 2;
+        width: 182px;
+        height: 51px;
+        margin-left: 25%;
+    }
+
+    .deletar__produtos {
+        min-width: 1600px;
+        height: 650px;
+    }
+
+    .deletar__produtos-form {
+        width: 1136px;
+        height: 500px;  
+        padding: 20px;
+        padding-top: 32px;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .deletar__produtos-fields {
+        gap: 32px;
+    }
+
+    .deletar__produtos-titulo {
+        width: 559px;
+        height: 38px;
+    }
+
+    .deletar__produtos-input__container,
+    .deletar__produtos-elementos,
+    .deletar__produtos-textos {
+        width: 559px;
+        height: 56px;
+    }
+
+    .deletar__produtos-input__container--textarea,
+    .deletar__produtos-input--textarea,
+    .deletar__produtos-elementos--textarea {
+        width: 559px;
+    }
+
+    .deletar__produtos-button {
+        width: 559px;
+        height: 51px;
+    }
+
+    .contato__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        min-width: 1632px;
+        height: 470px;
+    }
+    
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 64px;
+        margin: 0;
+        margin-left: 75px;
+        gap: 10px;
+        width: 1200px;
+        height: 368px;
+    }
+    
+    .suporte {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 100px;
+        width: 600px;
+        height: 240px;
+    }
+    
+    .suporte__logo {
+        width: 176px;
+        height: 50px;
+    }
+    
+    .suporte__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 176px;
+        height: 234px;
+    }
+    
+    .suporte__item {
+        width: 176px;
+        height: 19px;
+        text-align: left;
+    }
+    
+    .contato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 560px;
+        height: 240px;
+    }
+    
+    .contato__form-titulo {
+        width: 560px;
+        height: 19px;
+    }
+    
+    .contato__fields {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 560px;
+        height: 250px;
+    }
+    
+    .contato__input__container,
+    .contato__input__container--textarea {
+        width: 560px;
+    }
+    
+    .contato__input {
+        width: 536px;
+    }
+    
+    .contato__input--textarea {
+        width: 560px;
+        height: 78px;
+    }
+    
+    .contato__input:focus,
+    .contato__input--textarea:focus {
+        width: 556px;
+    }
+    
+    .contato__elementos {
+        width: 560px;
+        height: 56px;
+    }
+    
+    .contato__textos {
+        width: 536px;
+        height: 40px;
+    }
+    
+    .contato__elementos--textarea {
+        width: 555px;
+        height: 82px;
+        padding: 0;
+    }
+    
+    .footer {
+        min-width: 1440px;
+        height: 102px;
+    }
+    
+    .footer__p {
+       width: 234px;
+       height: 38px;
+    }
+
+}
